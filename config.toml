@@ -28,7 +28,7 @@ theme = "hugo-serif-theme"
 [menu]
   # Main Menu
   [[menu.main]]
-    name = "Services"
+    name = "Test"
     url = "/services/"
       weight = 1
 
