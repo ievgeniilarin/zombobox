@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="{{ ($style | minify | fingerprint).RelPermalink }}">
   {{ end }}
 
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   {{ block "header_css" . }}{{ end }}
 
 
