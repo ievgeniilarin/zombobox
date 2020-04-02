@@ -3,79 +3,84 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/team/peter-van-eijk/</loc>
+    <loc>http://zombobox.com.ua/team/peter-van-eijk/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/services/accounting/</loc>
+    <loc>http://zombobox.com.ua/services/accounting/</loc>
     <lastmod>2018-11-18T12:33:46+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/team/sage-kirk/</loc>
+    <loc>http://zombobox.com.ua/team/sage-kirk/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/services/tax-preperation/</loc>
+    <loc>http://zombobox.com.ua/services/tax-preperation/</loc>
     <lastmod>2018-11-18T12:33:46+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://zombobox.com.ua/services/2020-03-30-another-service/</loc>
+    <lastmod>2020-03-30T15:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/</loc>
+    <lastmod>2020-03-30T15:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/</loc>
+    <lastmod>2020-03-30T15:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/mergers/</loc>
     <lastmod>2018-11-28T15:15:34+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/services/mergers/</loc>
-    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/services/</loc>
-    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/services/business-sales/</loc>
+    <loc>http://zombobox.com.ua/services/business-sales/</loc>
     <lastmod>2018-11-28T15:15:26+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/services/superannuation/</loc>
+    <loc>http://zombobox.com.ua/services/superannuation/</loc>
     <lastmod>2018-11-28T15:14:54+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/services/business-advisory/</loc>
+    <loc>http://zombobox.com.ua/services/business-advisory/</loc>
     <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/team/</loc>
+    <loc>http://zombobox.com.ua/team/</loc>
     <lastmod>2018-11-19T10:47:58+10:00</lastmod>
   </url>
   
   <url>
-    <loc>/contact/</loc>
+    <loc>http://zombobox.com.ua/contact/</loc>
     <lastmod>2018-02-22T17:01:34+07:00</lastmod>
   </url>
   
   <url>
-    <loc>/about/</loc>
+    <loc>http://zombobox.com.ua/about/</loc>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>http://zombobox.com.ua/categories/</loc>
   </url>
   
   <url>
-    <loc>/404/</loc>
+    <loc>http://zombobox.com.ua/404/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://zombobox.com.ua/tags/</loc>
   </url>
   
 </urlset>

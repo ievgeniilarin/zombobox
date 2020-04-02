@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://zombobox.com.ua/"
 languageCode = "en-us"
 title = "Hugo Serif Theme"
 themesDir = "themes"
@@ -27,15 +27,15 @@ theme = "hugo-serif-theme"
 
 [menu]
   # Main Menu
-  [[menu.main]]
-    name = "Services"
-    url = "/services/"
-      weight = 1
+  # [[menu.main]]
+  #   name = "Services"
+  #   url = "/services/"
+  #     weight = 1
 
-  [[menu.main]]
-      name = "Team"
-      url = "/team/"
-      weight = 2
+  # [[menu.main]]
+  #     name = "Team"
+  #     url = "/team/"
+  #     weight = 2
 
   # Footer Menu
   [[menu.footer]]

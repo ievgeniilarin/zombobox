@@ -1,8 +1,9 @@
-<div class="service service-summary">
-  <div class="service-content">
-    <h2 class="service-title">
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </h2>
-    <p>{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p>
+<div class="card border-0 neumorphism">
+  <div class="card-body">
+    <h3 class="card-title">
+      <a class="text-decoration-none" href="{{ .Permalink }}">{{ .Title }}</a>
+    </h3>
+    <p class="card-text small">{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p>
+      <div class="fb-video" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500" data-allowfullscreen="true" data-autoplay="true" data-show-captions="true"></div>
   </div>
 </div>
