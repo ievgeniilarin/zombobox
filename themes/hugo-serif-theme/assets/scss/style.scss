@@ -3,9 +3,12 @@
 @import 'bootstrap/bootstrap-grid';
 @import 'variables';
 @import 'bootstrap/mixins';
+@import 'bootstrap/mixins/badge';
+@import 'bootstrap/badge';
 @import 'bootstrap/card';
 @import 'bootstrap/buttons';
 @import 'bootstrap/type';
+@import 'bootstrap/list-group';
 @import "bootstrap/utilities/text";
 @import "bootstrap/utilities/borders";
 @import "bootstrap/utilities/shadows";
@@ -72,10 +75,3 @@ body:after {
   }
 }
 {{ end }}
-
-.neumorphism {
-  border-radius: 5px;
-  background: #ffffff;
-  box-shadow:  20px 20px 40px #e6e6e6,
-               -20px -20px 40px #ffffff;
-}

@@ -1,23 +1,45 @@
-<div class="card border-0 shadow-sm m-1 {{ .Params.color }}">
-  {{ if .Params.header }}
-    <div class="card-header border-0 small">
-      {{ .Params.header }}
+
+<div class="card border-0 shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
+  {{ if .Params.categories }}
+    <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
+      {{ range .Params.categories }}
+        {{ . }}
+      {{ end }}
     </div>
   {{ end }}
-  {{ if .Params.imgTop }}
-    <img class="card-img-top" src="{{ .Params.imgTop }}" alt="Card image cap">
-  {{ end }}
   <div class="card-body">
-    <h3 class="card-title">
-      <a class="text-decoration-none" href="{{ .Permalink }}">{{ .Title }}</a>
+    <h3 class="card-title font-weight-bold">
+      {{ .Title }}
+      <small class="text-muted font-weight-lighter">{{ .Summary | plainify | htmlUnescape }}</small>
     </h3>
-    <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p>
-    <!-- <p class="card-text small">{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p> -->
+    {{ if .Params.experts }}
+      {{ range $index, $element := .Params.experts }}
+        <span class="badge badge-light text-decoration-none">{{ .name }}</span>
+      {{ end }}
+    {{ end }}
+    <!-- <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p> -->
   </div>
-  {{ if .Params.imgBottom }}
-    <img class="card-img-bottom" src="{{ .Params.imgBottom }}" alt="Card image cap">
+
+  {{ if .Params.image }}
+    <a href="{{ .Permalink }}">
+      <img class="card-img-bottom rounded-0 d-block" src="{{ .Params.image }}">
+    </a>
   {{ end }}
-  <div class="card-footer text-muted border-0 small">
+
+  {{ if .Params.experts }}
+    {{ $len := len .Params.experts }}
+    <div class="card-group">
+      {{ range $index, $element := .Params.experts }}
+        {{ if .image }}
+          <div class="card d-none d-sm-block rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
+            <img class="card-img-top rounded-0" src="{{ .image }}" alt="Card image cap">
+          </div>
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
+
+  <div class="card-footer text-muted border-0 small" style="background-color: white !important;">
    {{ .Date.Format "01-02 15:04" }}
   </div>
 </div>
