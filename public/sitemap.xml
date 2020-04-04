@@ -8,8 +8,13 @@
   </url>
   
   <url>
-    <loc>http://zombobox.com.ua/services/accounting/</loc>
+    <loc>http://zombobox.com.ua/services/1/</loc>
     <lastmod>2018-11-18T12:33:46+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/2/</loc>
+    <lastmod>2018-11-28T15:14:39+10:00</lastmod>
   </url>
   
   <url>
@@ -18,43 +23,48 @@
   </url>
   
   <url>
-    <loc>http://zombobox.com.ua/services/tax-preperation/</loc>
-    <lastmod>2018-11-18T12:33:46+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zombobox.com.ua/services/2020-03-30-another-service/</loc>
-    <lastmod>2020-03-30T15:27:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zombobox.com.ua/</loc>
-    <lastmod>2020-03-30T15:27:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zombobox.com.ua/services/</loc>
-    <lastmod>2020-03-30T15:27:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zombobox.com.ua/services/mergers/</loc>
-    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://zombobox.com.ua/services/business-sales/</loc>
+    <loc>http://zombobox.com.ua/services/3/</loc>
     <lastmod>2018-11-28T15:15:26+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://zombobox.com.ua/services/superannuation/</loc>
+    <loc>http://zombobox.com.ua/services/4/</loc>
+    <lastmod>2018-11-28T15:15:34+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/5/</loc>
     <lastmod>2018-11-28T15:14:54+10:00</lastmod>
   </url>
   
   <url>
-    <loc>http://zombobox.com.ua/services/business-advisory/</loc>
-    <lastmod>2018-11-28T15:14:39+10:00</lastmod>
+    <loc>http://zombobox.com.ua/services/6/</loc>
+    <lastmod>2018-11-18T12:33:46+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/7/</loc>
+    <lastmod>2018-11-28T15:14:54+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/8/</loc>
+    <lastmod>2020-03-18T12:33:46+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/9/</loc>
+    <lastmod>2020-02-18T12:33:46+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/</loc>
+    <lastmod>2020-03-18T12:33:46+10:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://zombobox.com.ua/services/</loc>
+    <lastmod>2020-03-18T12:33:46+10:00</lastmod>
   </url>
   
   <url>
