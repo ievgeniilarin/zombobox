@@ -28,10 +28,10 @@
 
   {{ if .Params.images }}
     {{ $len := len .Params.images }}
-    <div class="card-group">
+    <div class="card-group flex-row">
       {{ range $index, $element := .Params.images }}
         {{ if . }}
-          <div class="card d-none d-sm-block rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
+          <div class="card rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
             <img class="card-img-top rounded-0 d-block" src="{{ . }}" alt="Card image cap">
           </div>
         {{ end }}
