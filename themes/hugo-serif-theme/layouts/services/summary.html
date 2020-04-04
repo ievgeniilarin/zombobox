@@ -14,7 +14,7 @@
     </h3>
     {{ if .Params.experts }}
       {{ range $index, $element := .Params.experts }}
-        <span class="badge badge-light text-decoration-none">{{ .name }}</span>
+        <span class="badge badge-light text-decoration-none font-weight-light">{{ . }}</span>
       {{ end }}
     {{ end }}
     <!-- <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p> -->
@@ -26,20 +26,20 @@
     </a>
   {{ end }}
 
-  {{ if .Params.experts }}
-    {{ $len := len .Params.experts }}
+  {{ if .Params.images }}
+    {{ $len := len .Params.images }}
     <div class="card-group">
-      {{ range $index, $element := .Params.experts }}
-        {{ if .image }}
+      {{ range $index, $element := .Params.images }}
+        {{ if . }}
           <div class="card d-none d-sm-block rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
-            <img class="card-img-top rounded-0" src="{{ .image }}" alt="Card image cap">
+            <img class="card-img-top rounded-0 d-block" src="{{ . }}" alt="Card image cap">
           </div>
         {{ end }}
       {{ end }}
     </div>
   {{ end }}
 
-  <div class="card-footer text-muted border-0 small" style="background-color: white !important;">
-   {{ .Date.Format "01-02 15:04" }}
+  <div class="card-footer text-muted border-0 small text-monospace" style="background-color: white !important;">
+   {{ .Date.Format "01.02 15:04" }}
   </div>
 </div>

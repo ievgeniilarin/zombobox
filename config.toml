@@ -47,3 +47,8 @@ theme = "hugo-serif-theme"
     name = "Contact"
     url = "/contact/"
       weight = 2
+
+[taxonomies]
+  category = "categories"
+  expert = "experts"
+  tag = "tags"
