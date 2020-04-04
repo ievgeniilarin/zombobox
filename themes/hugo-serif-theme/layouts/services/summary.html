@@ -1,9 +1,23 @@
-<div class="card border-0 neumorphism">
+<div class="card border-0 shadow-sm m-1 {{ .Params.color }}">
+  {{ if .Params.header }}
+    <div class="card-header border-0 small">
+      {{ .Params.header }}
+    </div>
+  {{ end }}
+  {{ if .Params.imgTop }}
+    <img class="card-img-top" src="{{ .Params.imgTop }}" alt="Card image cap">
+  {{ end }}
   <div class="card-body">
     <h3 class="card-title">
       <a class="text-decoration-none" href="{{ .Permalink }}">{{ .Title }}</a>
     </h3>
-    <p class="card-text small">{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p>
-      <div class="fb-video" data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553" data-width="500" data-allowfullscreen="true" data-autoplay="true" data-show-captions="true"></div>
+    <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p>
+    <!-- <p class="card-text small">{{ .Content | plainify | htmlUnescape | truncate 120 "…" }}</p> -->
+  </div>
+  {{ if .Params.imgBottom }}
+    <img class="card-img-bottom" src="{{ .Params.imgBottom }}" alt="Card image cap">
+  {{ end }}
+  <div class="card-footer text-muted border-0 small">
+   {{ .Date.Format "01-02 15:04" }}
   </div>
 </div>
