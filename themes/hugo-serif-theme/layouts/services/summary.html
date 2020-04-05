@@ -3,7 +3,11 @@
   {{ if .Params.categories }}
     <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
       {{ range .Params.categories }}
-        {{ . }}
+        <span>{{ . }}</span>
+      {{ end }}
+      <span class="small text-black-50 float-right">{{ .Date.Format "01.02" }}</span>
+      {{ if .Params.message }}
+        <span class="badge badge-warning float-right mr-1 text-uppercase">{{ .Params.message }}</span>
       {{ end }}
     </div>
   {{ end }}
@@ -12,11 +16,6 @@
       {{ .Title }}
       <small class="text-muted font-weight-lighter">{{ .Summary | plainify | htmlUnescape }}</small>
     </h3>
-    {{ if .Params.experts }}
-      {{ range $index, $element := .Params.experts }}
-        <span class="badge badge-light text-decoration-none font-weight-light">{{ . }}</span>
-      {{ end }}
-    {{ end }}
     <!-- <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p> -->
   </div>
 
@@ -41,6 +40,10 @@
   {{ end }}
 
   <div class="card-footer border-0 small" style="background-color: white !important;">
-   <span class="small text-black-50">{{ .Date.Format "01.02" }}</span> <span class="small">{{ .Date.Format "15:04" }}</span>
+    {{ if .Params.experts }}
+      {{ range $index, $element := .Params.experts }}
+        <span class="badge badge-light text-decoration-none font-weight-light">{{ . }}</span>
+      {{ end }}
+    {{ end }}
   </div>
 </div>
