@@ -31,7 +31,8 @@
     <div class="card-group flex-row">
       {{ range $index, $element := .Params.images }}
         {{ if . }}
-          <div class="card rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
+          <!-- <div class="card rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}"> -->
+          <div class="card rounded-0 m-0 border-bottom-0 border-left-0 {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
             <img class="card-img-top rounded-0 d-block" src="{{ . }}" alt="Card image cap">
           </div>
         {{ end }}
@@ -39,7 +40,7 @@
     </div>
   {{ end }}
 
-  <div class="card-footer text-muted border-0 small text-monospace" style="background-color: white !important;">
-   {{ .Date.Format "01.02 15:04" }}
+  <div class="card-<footer></footer> border-0 small" style="background-color: white !important;">
+   <span class="small text-black-50">{{ .Date.Format "01.02" }}</span> <span class="small">{{ .Date.Format "15:04" }}</span>
   </div>
 </div>
