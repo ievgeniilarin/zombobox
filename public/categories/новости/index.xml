@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Новости on Hugo Serif Theme</title>
+    <link>http://zombobox.com.ua/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/</link>
+    <description>Recent content in Новости on Hugo Serif Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Dec 2018 12:33:46 +1000</lastBuildDate>
+    
+	<atom:link href="http://zombobox.com.ua/categories/%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Заголовок из нескольких слов</title>
+      <link>http://zombobox.com.ua/services/1/</link>
+      <pubDate>Tue, 18 Dec 2018 12:33:46 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/1/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis. &lt;em&gt;Saetigeri iubeas&lt;/em&gt;, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/3/</link>
+      <pubDate>Sun, 16 Dec 2018 15:15:26 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/3/</guid>
+      <description>&lt;p&gt;Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
+vixque dixit negari &lt;em&gt;ullis stamina&lt;/em&gt;: trahit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/4/</link>
+      <pubDate>Sat, 15 Dec 2018 15:15:34 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/4/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/5/</link>
+      <pubDate>Fri, 14 Dec 2018 15:14:54 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/5/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/6/</link>
+      <pubDate>Thu, 13 Dec 2018 12:33:46 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/6/</guid>
+      <description>&lt;p&gt;Lorem markdownum &lt;strong&gt;Achaica revolutaque amore&lt;/strong&gt;, penitus puppes nec furit,
+clipeus fatetur, mira inter accedere.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/7/</link>
+      <pubDate>Wed, 12 Dec 2018 15:14:54 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/7/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/8/</link>
+      <pubDate>Tue, 11 Dec 2018 12:33:46 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/8/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/2/</link>
+      <pubDate>Mon, 10 Dec 2018 15:14:39 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/2/</guid>
+      <description>&lt;p&gt;Lorem markdownum, dictis umbrosum dextrum.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

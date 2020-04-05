@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ронлак Рунтроп on Hugo Serif Theme</title>
+    <link>http://zombobox.com.ua/experts/%D1%80%D0%BE%D0%BD%D0%BB%D0%B0%D0%BA-%D1%80%D1%83%D0%BD%D1%82%D1%80%D0%BE%D0%BF/</link>
+    <description>Recent content in Ронлак Рунтроп on Hugo Serif Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 15 Dec 2018 15:15:34 +1000</lastBuildDate>
+    
+	<atom:link href="http://zombobox.com.ua/experts/%D1%80%D0%BE%D0%BD%D0%BB%D0%B0%D0%BA-%D1%80%D1%83%D0%BD%D1%82%D1%80%D0%BE%D0%BF/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/4/</link>
+      <pubDate>Sat, 15 Dec 2018 15:15:34 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/4/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

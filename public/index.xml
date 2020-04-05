@@ -6,7 +6,7 @@
     <description>Recent content in Home on Hugo Serif Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 18 Mar 2020 12:33:46 +1000</lastBuildDate>
+    <lastBuildDate>Tue, 18 Dec 2018 12:33:46 +1000</lastBuildDate>
     
 	<atom:link href="http://zombobox.com.ua/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,28 +22,6 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
     </item>
     
     <item>
-      <title>Title 1</title>
-      <link>http://zombobox.com.ua/services/1/</link>
-      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
-      
-      <guid>http://zombobox.com.ua/services/1/</guid>
-      <description>&lt;p&gt;Lorem markdownum aequalis strigis. &lt;em&gt;Saetigeri iubeas&lt;/em&gt;, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Title 2</title>
-      <link>http://zombobox.com.ua/services/2/</link>
-      <pubDate>Wed, 28 Nov 2018 15:14:39 +1000</pubDate>
-      
-      <guid>http://zombobox.com.ua/services/2/</guid>
-      <description>&lt;p&gt;Lorem markdownum, dictis umbrosum dextrum, Lelegeia quamquam distantes pares
-ignisque quaerit dederat gemino Aethiopesque &lt;a href=&#34;#inque-ne-collocat&#34;&gt;caelo&lt;/a&gt;
-ulciscitur est.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Sage Kirk</title>
       <link>http://zombobox.com.ua/team/sage-kirk/</link>
       <pubDate>Mon, 19 Nov 2018 10:47:58 +1000</pubDate>
@@ -53,41 +31,48 @@ ulciscitur est.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 3</title>
+      <title>Заголовок из нескольких слов</title>
+      <link>http://zombobox.com.ua/services/1/</link>
+      <pubDate>Tue, 18 Dec 2018 12:33:46 +1000</pubDate>
+      
+      <guid>http://zombobox.com.ua/services/1/</guid>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis. &lt;em&gt;Saetigeri iubeas&lt;/em&gt;, vultu huic alvum nondum
+de obside ut laniavit arbor palmis, cum quin.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Заголовок из нескольких слов и немножко больше</title>
       <link>http://zombobox.com.ua/services/3/</link>
-      <pubDate>Wed, 28 Nov 2018 15:15:26 +1000</pubDate>
+      <pubDate>Sun, 16 Dec 2018 15:15:26 +1000</pubDate>
       
       <guid>http://zombobox.com.ua/services/3/</guid>
       <description>&lt;p&gt;Cyanee nec pedicis positi. Esse et diem forte quoque et ieiunia
-vixque dixit negari &lt;em&gt;ullis stamina&lt;/em&gt;: trahit. Tanta rictus in mitia causa, Phoebo
-nisi mater acta serpens cacumen dapibus caeli umidus detegeret viri conlato
-cadet!&lt;/p&gt;</description>
+vixque dixit negari &lt;em&gt;ullis stamina&lt;/em&gt;: trahit.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 4</title>
+      <title>Заголовок из нескольких слов и немножко больше</title>
       <link>http://zombobox.com.ua/services/4/</link>
-      <pubDate>Wed, 28 Nov 2018 15:15:34 +1000</pubDate>
+      <pubDate>Sat, 15 Dec 2018 15:15:34 +1000</pubDate>
       
       <guid>http://zombobox.com.ua/services/4/</guid>
       <description>&lt;p&gt;Lorem markdownum aequalis strigis. Saetigeri iubeas, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.&lt;/p&gt;</description>
+de obside ut laniavit arbor palmis, cum quin.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 5</title>
+      <title>Заголовок из нескольких слов и немножко больше</title>
       <link>http://zombobox.com.ua/services/5/</link>
-      <pubDate>Wed, 28 Nov 2018 15:14:54 +1000</pubDate>
+      <pubDate>Fri, 14 Dec 2018 15:14:54 +1000</pubDate>
       
       <guid>http://zombobox.com.ua/services/5/</guid>
       <description>&lt;p&gt;Lorem markdownum aequalis strigis.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 6</title>
+      <title>Заголовок из нескольких слов и немножко больше</title>
       <link>http://zombobox.com.ua/services/6/</link>
-      <pubDate>Sun, 18 Nov 2018 12:33:46 +1000</pubDate>
+      <pubDate>Thu, 13 Dec 2018 12:33:46 +1000</pubDate>
       
       <guid>http://zombobox.com.ua/services/6/</guid>
       <description>&lt;p&gt;Lorem markdownum &lt;strong&gt;Achaica revolutaque amore&lt;/strong&gt;, penitus puppes nec furit,
@@ -95,37 +80,30 @@ clipeus fatetur, mira inter accedere.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 7</title>
+      <title>Заголовок из нескольких слов и немножко больше</title>
       <link>http://zombobox.com.ua/services/7/</link>
-      <pubDate>Wed, 28 Nov 2018 15:14:54 +1000</pubDate>
+      <pubDate>Wed, 12 Dec 2018 15:14:54 +1000</pubDate>
       
       <guid>http://zombobox.com.ua/services/7/</guid>
       <description>&lt;p&gt;Lorem markdownum aequalis strigis.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 8</title>
+      <title>Заголовок из нескольких слов и немножко больше</title>
       <link>http://zombobox.com.ua/services/8/</link>
-      <pubDate>Wed, 18 Mar 2020 12:33:46 +1000</pubDate>
+      <pubDate>Tue, 11 Dec 2018 12:33:46 +1000</pubDate>
       
       <guid>http://zombobox.com.ua/services/8/</guid>
-      <description>&lt;p&gt;Lorem markdownum aequalis strigis. &lt;em&gt;Saetigeri iubeas&lt;/em&gt;, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Lorem markdownum aequalis strigis.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Title 9</title>
-      <link>http://zombobox.com.ua/services/9/</link>
-      <pubDate>Tue, 18 Feb 2020 12:33:46 +1000</pubDate>
+      <title>Заголовок из нескольких слов и немножко больше</title>
+      <link>http://zombobox.com.ua/services/2/</link>
+      <pubDate>Mon, 10 Dec 2018 15:14:39 +1000</pubDate>
       
-      <guid>http://zombobox.com.ua/services/9/</guid>
-      <description>&lt;p&gt;Lorem markdownum aequalis strigis. &lt;em&gt;Saetigeri iubeas&lt;/em&gt;, vultu huic alvum nondum
-de obside ut laniavit arbor palmis, cum quin. Rupes vetat videndo, armigerae
-crimen habet Priamum nec.&lt;/p&gt;
-&lt;p&gt;Agitabitur signa lympha; non lacunae, mox cum tumulis quoque triste dictis.
-Ignibus inpatiens explorat, te tegens &lt;em&gt;ferro nocere haud&lt;/em&gt;, et Dulichium tui
-male! Quo sed &lt;a href=&#34;#vexant-achivi&#34;&gt;fuit flexit et&lt;/a&gt; hic die solido, gloria?&lt;/p&gt;</description>
+      <guid>http://zombobox.com.ua/services/2/</guid>
+      <description>&lt;p&gt;Lorem markdownum, dictis umbrosum dextrum.&lt;/p&gt;</description>
     </item>
     
     <item>
