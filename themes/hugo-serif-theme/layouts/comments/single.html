@@ -1,0 +1,33 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-comments-single{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+  <div class="row justify-content-start">
+    <div class="col-12 col-md-8">
+      <div class="comments comments-single">
+        <h1 class="display-5 font-weight-light mb-4">{{.Title}}</h1>
+        <div class="embed-responsive embed-responsive-16by9 mb-4">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R8Ak69FQKbg?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="content small">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+{{ end }}
+
+{{ define "footer_js" }}
+{{ $library := resources.Get "js/libs/library.js" }}
+{{ $comments := resources.Get "js/pages/comments.js" }}
+{{ $commentsJS := slice $library $comments |resources.Concat "js/comments.js" }}
+{{ if .Site.IsServer }}
+  <script type="text/javascript" src="{{ $commentsJS.RelPermalink }}"></script>
+  {{ else }}
+  <script type="text/javascript" src="{{ ($commentsJS | minify | fingerprint).RelPermalink }}"></script>
+  {{ end }}
+{{ end }}

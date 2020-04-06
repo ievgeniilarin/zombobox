@@ -15,6 +15,7 @@
 @import "bootstrap/utilities/shadows";
 @import 'bootstrap/utilities/float';
 @import "bootstrap/utilities/background";
+@import "bootstrap/utilities/embed";
 
 // Libraries
 @import 'libraries/hamburgers/hamburgers';
@@ -43,7 +44,8 @@
 // Pages
 @import 'pages/home';
 @import 'pages/team/team-summary';
-@import 'pages/services/page-services-single';
+@import 'pages/news/page-news-single';
+@import 'pages/comments/page-comments-single';
 
 body {
   font-size: 16px;
