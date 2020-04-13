@@ -54,8 +54,8 @@ collections:
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
-      - label: "Experts"
-        name: "experts"
+      - label: "Expertsw"
+        name: "expertsw"
         collapsed: false
         widget: "list"
         fields:
