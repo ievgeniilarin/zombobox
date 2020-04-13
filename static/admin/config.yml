@@ -28,7 +28,7 @@ collections:
         collapsed: false
         widget: "list"
         fields:
-          - {label: "Comment", name: "comment", widget: "relation", collection: "comments", searchFields: ["title"], valueField: "id", displayFields: ["title"]}
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
       - label: "Body"
         name: "body"
         widget: "markdown"
