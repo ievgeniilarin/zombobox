@@ -77,6 +77,6 @@ collections:
             fields:
               - {label: Last Name, name: lastName, widget: string}
               - {label: First Name, name: firstName, widget: string}
-              - {label: Taxonomy Slug, name: slug, widget: string}
               - {label: Description, name: description, widget: string}
               - {label: Image, name: image, widget: image}
+              - {label: Taxonomy Slug, name: slug, widget: string}
