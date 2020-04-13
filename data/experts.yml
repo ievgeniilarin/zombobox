@@ -1,6 +1,6 @@
 expert:
-  - firstName: Валентин
-    lastName: Гладких
-    slug: gladkih-valentin
+  - lastName: Гладких
+    firstName: Валентин
     description: Политолог
+    slug: gladkih-valentin
     image: /images/gladkih-valentin.png
