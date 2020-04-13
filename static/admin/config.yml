@@ -56,6 +56,16 @@ collections:
         widget: "datetime"
       - label: "Experts"
         name: "experts"
+        collapsed: false
+        widget: "list"
+        fields:
+          - label: "Expert"
+            name: "expert"
+            widget: "relation"
+            collection: "taxonomies"
+            searchFields: ["lastName"]
+            valueField: "slug"
+            displayFields: ["lastName"]
         widget: "string"
       - label: "YouTube"
         name: "youtube"
