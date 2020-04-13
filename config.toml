@@ -50,5 +50,5 @@ theme = "hugo-serif-theme"
 
 [taxonomies]
   category = "categories"
-  expert = "experts"
+  # expert = "experts"
   tag = "tags"
