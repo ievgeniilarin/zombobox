@@ -66,7 +66,7 @@ collections:
 
   - label: "Experts"
     name: "experts"
-    media_folder: static/images/experts
+    media_folder: ../static/images/experts
     public_folder: images/experts
     files:
       - label: "Experts"
