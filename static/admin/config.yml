@@ -29,3 +29,4 @@ collections:
       - {label: "Expert", name: "expert", widget: "string"}
       - {label: "YouTube", name: "youtube", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - { name: id, widget: string, default: "{{uuid}}" }
