@@ -60,6 +60,7 @@ collections:
         widget: ncw-file-relation
         collection: settings
         file: experts
+        target_field: experts
         display_fields: lastName
         multiple: true
         id_field: slug
