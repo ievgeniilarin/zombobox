@@ -64,13 +64,13 @@ collections:
         name: "body"
         widget: "markdown"
 
-  - label: "Experts"
-    name: "experts"
+  - label: "Taxonomies"
+    name: "taxonomies"
     media_folder: ../static/images/experts
     public_folder: images/experts
     files:
       - label: "Experts"
-        name: "about"
+        name: "experts"
         file: "data/experts.yml"
         fields:
           - label: Expert
