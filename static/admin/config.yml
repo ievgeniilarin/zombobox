@@ -61,8 +61,8 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-      - label: Categories
-        name: cats
+      - label: Experts
+        name: experts
 
         # Default widget name
         widget: ncw-file-relation
