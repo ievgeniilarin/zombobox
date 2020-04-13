@@ -54,15 +54,15 @@ collections:
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
-      - label: "Expertsw"
-        name: "expertsw"
+      - label: "Experts"
+        name: "experts"
         collapsed: false
         widget: "list"
         fields:
           - label: "Expert"
             name: "expert"
             widget: "relation"
-            collection: "taxonomies"
+            collection: "expert-taxonomy"
             searchFields: ["lastName"]
             valueField: "slug"
             displayFields: ["lastName"]
@@ -83,8 +83,8 @@ collections:
         name: "experts-taxonomy"
         file: "data/experts.yml"
         fields:
-          - label: Expert
-            name: expert
+          - label: Expert Taxonomy
+            name: expert-taxonomy
             widget: list
             fields:
               - {label: Last Name, name: lastName, widget: string}
