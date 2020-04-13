@@ -5884,7 +5884,7 @@ ol {
 .page-news-single .content > p:first-of-type {
   font-size: 1.6rem;
   line-height: 1.4;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   font-weight: regular;
   color: #686868; }
 

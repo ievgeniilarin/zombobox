@@ -1,1 +1,1 @@
-console.log('News')
+console.log('Comments')
