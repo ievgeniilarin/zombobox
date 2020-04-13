@@ -8,9 +8,19 @@
     <div class="col-12 col-md-8">
       <div class="comments comments-single">
         <h1 class="display-5 font-weight-light mb-4">{{.Title}}</h1>
+        <p class="small">
+          {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }},
+          {{ if .Params.experts }}
+            {{ range $index, $element := .Params.experts }}
+              <span class="font-weight-light">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        </p>
+        {{ if .Params.youtube }}
         <div class="embed-responsive embed-responsive-16by9 mb-4">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/R8Ak69FQKbg?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ .Params.youtube }}?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
+        {{ end }}
       </div>
       <div class="content small">
         {{ .Content }}

@@ -1,27 +1,38 @@
 {{ define "header_css" }}{{ end }}
-{{ define "body_classes" }}page-news-single{{ end }}
+{{ define "body_classes" }}page-comments-single{{ end }}
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
 <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
-      <div class="news news-single">
-        <h1 class="title">{{.Title}}</h1>
-        <div class="content">{{.Content}}</div>
+      <div class="comments comments-single">
+        <h1 class="display-5 font-weight-light mb-4">{{.Title}}</h1>
+        <p class="small">
+          {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }},
+          {{ if .Params.experts }}
+            {{ range $index, $element := .Params.experts }}
+              <span class="font-weight-light">{{ . }}</span>
+            {{ end }}
+          {{ end }}
+        </p>
+      </div>
+      <div class="content small">
+        {{ .Content }}
       </div>
     </div>
   </div>
+</div>
 </div>
 {{ end }}
 
 {{ define "footer_js" }}
 {{ $library := resources.Get "js/libs/library.js" }}
-{{ $news := resources.Get "js/pages/news.js" }}
-{{ $newsJS := slice $library $news |resources.Concat "js/news.js" }}
+{{ $comments := resources.Get "js/pages/comments.js" }}
+{{ $commentsJS := slice $library $comments |resources.Concat "js/comments.js" }}
 {{ if .Site.IsServer }}
-  <script type="text/javascript" src="{{ $newsJS.RelPermalink }}"></script>
+  <script type="text/javascript" src="{{ $commentsJS.RelPermalink }}"></script>
   {{ else }}
-  <script type="text/javascript" src="{{ ($newsJS | minify | fingerprint).RelPermalink }}"></script>
+  <script type="text/javascript" src="{{ ($commentsJS | minify | fingerprint).RelPermalink }}"></script>
   {{ end }}
 {{ end }}
