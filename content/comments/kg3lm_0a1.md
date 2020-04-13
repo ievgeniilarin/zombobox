@@ -3,8 +3,6 @@ title: "Николай Греков: «Нам нужен диалог»"
 date: 2020-04-13T14:40:14.062Z
 draft: false
 id: KG3lM_0a1
-experts:
-  - Николай Греков
 youtube: R8Ak69FQKbg
 categories:
   - Комментарий

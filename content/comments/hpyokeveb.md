@@ -2,8 +2,6 @@
 id: hpYoKEveb
 title: Валентин Гладких. Цивилизационные перспективы человечества
 date: 2020-04-13T17:37:58.938Z
-experts:
-  - Валентин Гладких
 youtube: MA3lwQ_JNfw
 categories:
   - Комментарий
