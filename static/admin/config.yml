@@ -63,9 +63,9 @@ collections:
             name: "expert"
             widget: "relation"
             collection: "taxonomies"
-            searchFields: ["expert.lastName"]
-            valueField: "expert.slug"
-            displayFields: ["expert.lastName"]
+            searchFields: ["experts.expert.lastName"]
+            valueField: "experts.expert.slug"
+            displayFields: ["experts.expert.lastName"]
       - label: "YouTube"
         name: "youtube"
         widget: "string"
