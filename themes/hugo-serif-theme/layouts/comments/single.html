@@ -13,6 +13,7 @@
           {{ if .Params.experts }}
             {{ range $index, $element := .Params.experts }}
               <span class="font-weight-light">{{ . }}</span>
+              {{ "experts/" | relURL }}{{ . | urlize }}
             {{ end }}
           {{ end }}
         </p>
