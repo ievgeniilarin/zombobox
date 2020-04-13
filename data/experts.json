@@ -1,8 +1,7 @@
 {
   "experts": [
     {
-      "lastName": "Гладких",
-      "firstName": "Валентин",
+      "name": "Гладких Валентин",
       "description": "Политолог",
       "image": "images/experts/gladkih-valentin.png",
       "slug": "gladkih-valentin"
