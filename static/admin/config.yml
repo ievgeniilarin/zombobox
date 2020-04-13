@@ -71,18 +71,18 @@ collections:
         collection: setting
 
         # The name of the file in that collection
-        file: categories
+        file: experts
 
         # The field that is a list
-        target_field: categories
+        target_field: experts
 
         # The field that will be used to store data
         # Only applicable to list with multi fields
-        id_field: id
+        id_field: slug
 
         # The field that will be used to show as options
         # Only applicable to list with multi fields
-        display_fields: name
+        display_fields: lastName
 
         # Allow multiple selection
         multiple: true
@@ -90,24 +90,31 @@ collections:
   - label: Setting
     name: setting  # <---- 'collection'
     files:
-      - label: Categories
-        name: categories  # <---- 'file'
-        file: data/cats.json
+      - label: Experts
+        name: experts  # <---- 'file'
+        file: data/experts.json
         fields:
-          - label: Categories
-            name: categories # <---- 'target_field'
+          - label: Experts
+            name: experts # <---- 'target_field'
             widget: list
             allow_add: true
             fields:
-              - label: Name
-                name: name # <--- 'display_fields'
+              - label: Last Name
+                name: lastName # <--- 'display_fields'
+                widget: string
+
+              - label: First Name
+                name: firstName
                 widget: string
 
               - label: Description
-                name: desc
-                widget: text
+                name: description
+                widget: string
 
-              - label: ID
-                name: id # <---- 'id_field'
-                widget: ncw-id
-                prefix: cats
+              - label: Slug
+                name: slug # <---- 'id_field'
+                widget: string
+
+              - label: Image
+                name: image
+                widget: image
