@@ -25,11 +25,15 @@ collections:
         widget: "datetime"
       - label: "Comments"
         name: "comments"
-        widget: "relation"
-        collection: "comments"
-        searchFields: ["title"]
-        valueField: "id"
-        displayFields: ["title"]
+        widget: "list"
+        fields:
+          - label: "Comment"
+            name: "comment"
+            widget: "relation"
+            collection: "comments"
+            searchFields: ["title"]
+            valueField: "id"
+            displayFields: ["title"]
       - label: "Body"
         name: "body"
         widget: "markdown"
