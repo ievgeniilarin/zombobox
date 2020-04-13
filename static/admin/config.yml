@@ -62,7 +62,7 @@ collections:
           - label: "Expert"
             name: "expert"
             widget: "relation"
-            collection: "expert"
+            collection: "taxonomies"
             searchFields: ["lastName"]
             valueField: "slug"
             displayFields: ["lastName"]
