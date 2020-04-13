@@ -78,12 +78,12 @@ collections:
     media_folder: ../static/images/experts
     public_folder: images/experts
     files:
-      - label: "Experts Taxonomy"
-        name: "experts-taxonomy"
+      - label: "Experts"
+        name: "experts"
         file: "data/experts.yml"
         fields:
-          - label: Expert Taxonomy
-            name: expert-taxonomy
+          - label: "Expert"
+            name: "expert"
             widget: list
             fields:
               - {label: Last Name, name: lastName, widget: string}
