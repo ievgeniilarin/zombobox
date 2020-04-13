@@ -3,7 +3,6 @@ draft: false
 id: bplySleWx
 title: Заголовок из нескольких слов и одно экспертное мнение с иллюстрацией новости
 date: 2020-04-13T14:28:51.376Z
-comments: rsbvxns9g
 images:
   - images/headshot-female.jpg
 image: images/thumbnail-pastoral.jpg

@@ -6,7 +6,6 @@ experts:
 id: KacmvVueX
 title: Заголовок из нескольких слов и одно экспертное мнение без иллюстрации новости
 date: 2020-04-13T14:17:40.744Z
-comments: 10 Tips for Buying a Laptop! | The Tech Chap
 images:
   - images/headshot-male.jpg
 categories:
