@@ -76,7 +76,7 @@ collections:
         name: lastName
         widget: string
       - label: First Name
-        name: lastName
+        name: firstName
         widget: string
       - label: Slug
         name: slug
