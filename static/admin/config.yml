@@ -70,8 +70,11 @@ collections:
     path: '{{slug}}/index'
     create: true
     fields:
-      - label: Name
-        name: name
+      - label: Last Name
+        name: lastName
+        widget: string
+      - label: First Name
+        name: lastName
         widget: string
       - label: Slug
         name: slug
