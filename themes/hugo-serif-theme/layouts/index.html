@@ -22,7 +22,7 @@
 <div class="container pt-6 pb-md-5">
   <div class="row justify-content-start mb-4">
     {{ $news := where .Site.RegularPages "Type" "news" }}
-    {{ range first 12 (sort $news ".Params.weight") }}
+    {{ range first 12 $news }}
       <div class="col-12 col-md-6 col-lg-4 mb-1 d-flex align-items-stretch">
         {{ .Render "summary" }}
       </div>
