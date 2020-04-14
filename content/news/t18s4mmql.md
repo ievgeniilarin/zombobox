@@ -6,6 +6,7 @@ link: https://lb.ua/news/2020/04/14/455308_general_sbu_zaderzhan_podgotovku.html
 date: 2020-04-14T18:15:34.685Z
 comments:
   - dtA-FTgqs
+  - 6Za7deeNv
 categories: hot-news
 lead: Генерал-майор Службы безопасности Украины Валерий Шайтанов задержан за
   подготовку убийства Адама Осмаева по заказу российских спецслужб.
