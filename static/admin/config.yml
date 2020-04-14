@@ -60,6 +60,15 @@ collections:
         widget: "image"
         required: false
 
+      - label: "Категории"
+        name: "categories"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["name"]
+        valueField: "slug"
+        displayFields: ["name"]
+        required: true
+
       - label: "Текст"
         name: "body"
         widget: "markdown"
