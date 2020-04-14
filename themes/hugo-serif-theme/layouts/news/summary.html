@@ -1,10 +1,8 @@
 
 <div class="card border-0 shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
   <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
-    {{ if .Params.categories }}
-      {{ range .Params.categories }}
-      
-      {{ end }}
+    {{ with .Params.categories }}
+
     {{ end }}
   </div>
   <div class="card-body">
