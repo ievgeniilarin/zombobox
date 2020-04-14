@@ -142,17 +142,20 @@ collections:
         widget: "image"
         required: false
 
-  - name: sources
-    label: Sources
-    label_singular: 'source'
-    folder: content/sources
+  - name: "sources"
+    label: "Источники"
+    label_singular: "Источник"
+    folder: "content/sources"
     slug: "{{fields.slug}}"
-    path: '{{slug}}/_index'
+    path: "{{slug}}/_index"
     create: true
     fields:
-      - label: Name
+      - label: "Название"
         name: name
         widget: string
-      - label: Slug
+        required: true
+
+      - label: "Slug"
         name: slug
         widget: string
+        required: true
