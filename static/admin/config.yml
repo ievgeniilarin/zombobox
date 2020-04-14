@@ -151,11 +151,11 @@ collections:
     create: true
     fields:
       - label: "Название"
-        name: name
-        widget: string
+        name: "name"
+        widget: "string"
         required: true
 
       - label: "Slug"
-        name: slug
-        widget: string
+        name: "slug"
+        widget: "string"
         required: true
