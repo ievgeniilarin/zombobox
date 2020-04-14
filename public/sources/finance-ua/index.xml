@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo Serif Theme</title>
+    <link>http://zombobox.com.ua/sources/finance-ua/</link>
+    <description>Recent content on Hugo Serif Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Apr 2020 14:28:51 +0000</lastBuildDate>
+    
+	<atom:link href="http://zombobox.com.ua/sources/finance-ua/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>НБУ дважды выходил на рынок</title>
+      <link>http://zombobox.com.ua/news/bplyslewx/</link>
+      <pubDate>Mon, 13 Apr 2020 14:28:51 +0000</pubDate>
+      
+      <guid>http://zombobox.com.ua/news/bplyslewx/</guid>
+      <description>&lt;p&gt;НБУ вышел на межбанк и быстро купил $50 млн по 27. Но этого оказалось мало – рынок начал опять давить на курс вниз и регулятор вышел повторно с уровнем по 26,99&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -9,14 +9,15 @@
       <div class="comments comments-single">
         <h1 class="display-5 font-weight-light mb-1">{{.Title}}</h1>
         <p class="small mb-2">
-          {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}
-          {{ if .Params.experts }}
-            {{ range $index, $element := .Params.experts }}
-              <span class="font-weight-light">{{ . }}</span>
+          {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }},
+
+          {{ with $.Site.GetPage "/sources" }}
+            {{ with .GetPage "finance-ua" }}
+                <a href="{{ $.Params.link }}" class="text-muted">{{ .Param "name" }}</a>
             {{ end }}
           {{ end }}
         </p>
-        <div class="content small mb-4">
+        <div class="content mb-4">
           {{ .Content }}
         </div>
       </div>

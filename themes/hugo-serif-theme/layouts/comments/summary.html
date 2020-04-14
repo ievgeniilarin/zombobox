@@ -15,9 +15,6 @@
       {{ end }}
     {{ end }}
     <span class="small text-black-50 float-right">{{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}</span>
-    {{ if .Params.message }}
-      <span class="badge badge-warning float-right mr-1 text-uppercase">{{ .Params.message }}</span>
-    {{ end }}
   </div>
   <div class="row">
     <div class="col-lg-5">
@@ -28,10 +25,11 @@
     <div class="col-lg-7">
       <div class="card-body">
         <h3 class="card-title font-weight-bold">
-          {{ .Title }}
-          <small class="text-muted font-weight-lighter">{{ .Summary | plainify | htmlUnescape }}</small>
+          <a href="{{ .Permalink }}" class="text-decoration-none" style="color: black;">
+            {{ .Title }}
+          </a>
         </h3>
-        <a href="{{ .Permalink }}" role="button" class="btn btn-outline-secondary btn-sm text-decoration-none">Читать</a>
+        <p class="text-muted">{{ .Summary | plainify | htmlUnescape }}</p>
         <!-- <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p> -->
       </div>
     </div>

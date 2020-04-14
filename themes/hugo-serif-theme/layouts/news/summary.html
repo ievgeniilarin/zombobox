@@ -25,15 +25,22 @@
     </a>
   {{ end }}
 
-  {{ if .Params.images }}
-    {{ $len := len .Params.images }}
+  {{ if .Params.comments }}
+    {{ $len := len .Params.comments }}
     <div class="card-group flex-row">
-      {{ range $index, $element := .Params.images }}
-        {{ if . }}
-          <!-- <div class="card rounded-0 border-bottom-0 {{ if eq $index 0 }} border-left-0 {{ end }} {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}"> -->
-          <div class="card rounded-0 m-0 border-bottom-0 border-left-0 {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
-            <img class="card-img-top rounded-0 d-block" src="{{ . | relURL }}" alt="Card image cap">
-          </div>
+      {{ range $index, $element := .Params.comments }}
+        {{ with $.Site.GetPage .  }}
+          {{ if .Params.experts }}
+            {{ range $index, $element := .Params.experts }}
+              {{ with $.Site.GetPage "/experts" }}
+                {{ with .GetPage $element }}
+                  <div class="card rounded-0 m-0 border-bottom-0 border-left-0 {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
+                    <img class="card-img-top rounded-0 d-block" src="{{ (.Param "image") | relURL }}" alt="Card image cap">
+                  </div>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
         {{ end }}
       {{ end }}
     </div>

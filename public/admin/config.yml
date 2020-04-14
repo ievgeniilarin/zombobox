@@ -20,6 +20,16 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
+      - label: "Sources"
+        name: "sources"
+        widget: "relation"
+        collection: "sources"
+        searchFields: ["name"]
+        valueField: "slug"
+        displayFields: ["name"]
+      - label: "Link"
+        name: "link"
+        widget: "string"
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
@@ -85,6 +95,24 @@ collections:
       - label: Slug
         name: slug
         widget: string
+      - label: Description
+        name: description
+        widget: string
       - label: Image
         name: image
         widget: image
+
+  - name: sources
+    label: Sources
+    label_singular: 'source'
+    folder: content/sources
+    slug: "{{fields.slug}}"
+    path: '{{slug}}/_index'
+    create: true
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: Slug
+        name: slug
+        widget: string
