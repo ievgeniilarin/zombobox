@@ -7,7 +7,7 @@ link: https://www.epravda.com.ua/news/2020/04/14/659335/
 date: 2020-04-13T14:28:51.376Z
 comments:
   - hpYoKEveb
-image: /images/news/bplyslewx.jpg
+image: ""
 categories: hot-news
 lead: >
   НБУ вышел на межбанк и быстро купил $50 млн по 27. Но этого оказалось мало –
