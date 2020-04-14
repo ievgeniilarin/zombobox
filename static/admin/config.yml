@@ -7,6 +7,125 @@ public_folder: "/images"
 publish_mode: editorial_workflow
 
 collections:
+
+- name: "experts"
+  label: "Эксперты"
+  label_singular: "Эксперт"
+  folder: "content/experts"
+  slug: "{{fields.slug}}"
+  path: "{{slug}}/_index"
+  media_folder: "../../../static/images/experts"
+  public_folder: "/images/experts"
+  create: true
+  fields:
+    - label: "Фамилия"
+      name: "lastName"
+      widget: "string"
+      required: true
+
+    - label: "Имя"
+      name: "firstName"
+      widget: "string"
+      required: true
+
+    - label: "Slug"
+      name: "slug"
+      widget: "string"
+      required: true
+
+    - label: "Описание"
+      name: "description"
+      widget: "string"
+      required: true
+
+    - label: "Иллюстрация"
+      name: "image"
+      widget: "image"
+      required: true
+
+  - name: "comments"
+    label: "Комментарии"
+    label_singular: "Комментарий"
+    folder: "content/comments"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
+      - label: "ID"
+        name: "id"
+        widget: "ncw-id"
+        required: true
+
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "Дата публикции"
+        name: "date"
+        widget: "datetime"
+        required: true
+
+      - label: "YouTube"
+        name: "youtube"
+        widget: "string"
+        required: true
+
+      - label: "Эксперты"
+        name: "experts"
+        widget: "relation"
+        collection: "experts"
+        searchFields: ["lastName"]
+        valueField: "slug"
+        displayFields: ["lastName"]
+        multiple: true
+        required: true
+
+      - label: "Лид"
+        name: "lead"
+        widget: "markdown"
+        required: true
+
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"
+        required: false
+
+  - name: "categories"
+    label: "Категории"
+    label_singular: "Категория"
+    folder: "content/categories"
+    slug: "{{fields.slug}}"
+    path: "{{slug}}/_index"
+    create: true
+    fields:
+      - label: "Название"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true
+
+  - name: "sources"
+    label: "Источники"
+    label_singular: "Источник"
+    folder: "content/sources"
+    slug: "{{fields.slug}}"
+    path: "{{slug}}/_index"
+    create: true
+    fields:
+      - label: "Название"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true
+
   - name: "news"
     label: "Новости"
     label_singular: Новость
@@ -78,121 +197,3 @@ collections:
         name: "body"
         widget: "markdown"
         required: false
-
-  - name: "comments"
-    label: "Комментарии"
-    label_singular: "Комментарий"
-    folder: "content/comments"
-    create: true
-    slug: "{{fields.id}}"
-    fields:
-      - label: "ID"
-        name: "id"
-        widget: "ncw-id"
-        required: true
-
-      - label: "Заголовок"
-        name: "title"
-        widget: "string"
-        required: true
-
-      - label: "Дата публикции"
-        name: "date"
-        widget: "datetime"
-        required: true
-
-      - label: "YouTube"
-        name: "youtube"
-        widget: "string"
-        required: true
-
-      - label: "Эксперты"
-        name: "experts"
-        widget: "relation"
-        collection: "experts"
-        searchFields: ["lastName"]
-        valueField: "slug"
-        displayFields: ["lastName"]
-        multiple: true
-        required: true
-
-      - label: "Лид"
-        name: "lead"
-        widget: "markdown"
-        required: true
-
-      - label: "Текст"
-        name: "body"
-        widget: "markdown"
-        required: false
-
-  - name: "experts"
-    label: "Эксперты"
-    label_singular: "Эксперт"
-    folder: "content/experts"
-    slug: "{{fields.slug}}"
-    path: "{{slug}}/_index"
-    media_folder: "../../../static/images/experts"
-    public_folder: "/images/experts"
-    create: true
-    fields:
-      - label: "Фамилия"
-        name: "lastName"
-        widget: "string"
-        required: true
-
-      - label: "Имя"
-        name: "firstName"
-        widget: "string"
-        required: true
-
-      - label: "Slug"
-        name: "slug"
-        widget: "string"
-        required: true
-
-      - label: "Описание"
-        name: "description"
-        widget: "string"
-        required: true
-
-      - label: "Иллюстрация"
-        name: "image"
-        widget: "image"
-        required: true
-
-  - name: "sources"
-    label: "Источники"
-    label_singular: "Источник"
-    folder: "content/sources"
-    slug: "{{fields.slug}}"
-    path: "{{slug}}/_index"
-    create: true
-    fields:
-      - label: "Название"
-        name: "name"
-        widget: "string"
-        required: true
-
-      - label: "Slug"
-        name: "slug"
-        widget: "string"
-        required: true
-
-  - name: "categories"
-    label: "Категории"
-    label_singular: "Категория"
-    folder: "content/categories"
-    slug: "{{fields.slug}}"
-    path: "{{slug}}/_index"
-    create: true
-    fields:
-      - label: "Название"
-        name: "name"
-        widget: "string"
-        required: true
-
-      - label: "Slug"
-        name: "slug"
-        widget: "string"
-        required: true
