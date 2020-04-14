@@ -1,7 +1,9 @@
 ---
 draft: false
 id: bplySleWx
-title: Заголовок из нескольких слов и одно экспертное мнение с иллюстрацией новости
+title: НБУ двічі виходив на ринок
+sources: pravda-com-ua
+link: https://www.epravda.com.ua/news/2020/04/14/659335/
 date: 2020-04-13T14:28:51.376Z
 comments:
   - hpYoKEveb
