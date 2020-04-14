@@ -159,3 +159,21 @@ collections:
         name: "slug"
         widget: "string"
         required: true
+
+  - name: "categories"
+    label: "Категории"
+    label_singular: "Категория"
+    folder: "content/categories"
+    slug: "{{fields.slug}}"
+    path: "{{slug}}/_index"
+    create: true
+    fields:
+      - label: "Название"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true
