@@ -4,7 +4,7 @@ id: KacmvVueX
 title: Зеленський звільнив свого представника в уряді і призначив наступника
 sources: pravda-com-ua
 link: https://www.pravda.com.ua/news/2020/04/14/7247856/
-date: 2020-04-13T14:17:40.744Z
+date: 2020-04-01T14:17:40.744Z
 comments:
   - hpYoKEveb
   - KG3lM_0a1
