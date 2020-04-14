@@ -68,7 +68,7 @@ collections:
     folder: content/experts
     slug: "{{fields.slug}}"
     path: '{{slug}}/index'
-    media_folder: "../../static/images/experts"
+    media_folder: "../../../static/images/experts"
     public_folder: "/images/experts"
     create: true
     fields:
