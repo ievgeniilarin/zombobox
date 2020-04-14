@@ -97,3 +97,18 @@ collections:
       - label: Image
         name: image
         widget: image
+
+  - name: sources
+    label: Sources
+    label_singular: 'source'
+    folder: content/sources
+    slug: "{{fields.slug}}"
+    path: '{{slug}}/_index'
+    create: true
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: Slug
+        name: slug
+        widget: string
