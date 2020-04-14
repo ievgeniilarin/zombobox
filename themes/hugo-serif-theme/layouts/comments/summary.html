@@ -2,15 +2,13 @@
 <div class="card border-0 mb-3 shadow">
   <div class="card-header border-0 text-uppercase">
     {{ if .Params.experts }}
-      {{ range $index, $element := .Params.experts }}
+      {{ range .Params.experts }}
         <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ . | urlize }}">
-        {{ with $.Site.GetPage "/experts" }}
-          {{ with .GetPage $element }}
-            <span class="badge badge-secondary font-weight-light">
-              {{ .Param "firstName" }} {{ .Param "lastName" }}, {{ .Param "description" }}
+          {{ range where $.Site.Pages "Params.slug" . }}
+            <span class="badge badge-secondary font-weight-light mr-1">
+              {{ .Param "firstName" }} {{ .Param "lastName" }}
             </span>
           {{ end }}
-        {{ end }}
         </a>
       {{ end }}
     {{ end }}
