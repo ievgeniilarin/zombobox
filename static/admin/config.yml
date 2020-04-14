@@ -8,7 +8,8 @@ publish_mode: editorial_workflow
 
 collections:
   - name: "news"
-    label: "News"
+    label: "Новости"
+    label_singular: Новость
     folder: "content/news"
     create: true
     slug: "{{fields.id}}"
@@ -20,12 +21,12 @@ collections:
         widget: "ncw-id"
         required: true
 
-      - label: "Title"
+      - label: "Заголовок"
         name: "title"
         widget: "string"
         required: true
 
-      - label: "Sources"
+      - label: "Источник"
         name: "sources"
         widget: "relation"
         collection: "sources"
@@ -34,17 +35,17 @@ collections:
         displayFields: ["name"]
         required: true
 
-      - label: "Link"
+      - label: "Ссылка"
         name: "link"
         widget: "string"
         required: true
 
-      - label: "Publish Date"
+      - label: "Дата публикации"
         name: "date"
         widget: "datetime"
         required: true
 
-      - label: "Comments"
+      - label: "Комментарии"
         name: "comments"
         widget: "relation"
         collection: "comments"
@@ -54,35 +55,43 @@ collections:
         multiple: true
         required: false
 
-      - label: Image
-        name: image
-        widget: image
+      - label: "Иллюстрация"
+        name: "image"
+        widget: "image"
         required: false
 
-      - label: "Body"
+      - label: "Текст"
         name: "body"
         widget: "markdown"
         required: false
 
-  - name: "comments" # Used in routes, e.g., /admin/collections/blog
-    label: "Comments" # Used in the UI
+  - name: "comments"
+    label: "Comments"
     label_singular: Comment
-    folder: "content/comments" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{fields.id}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+    folder: "content/comments"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
       - label: "ID"
         name: "id"
         widget: "ncw-id"
+        required: true
+
       - label: "Title"
         name: "title"
         widget: "string"
+        required: true
+
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
+        required: true
+
       - label: "YouTube"
         name: "youtube"
         widget: "string"
+        required: true
+
       - label: "Experts"
         name: "experts"
         widget: "relation"
@@ -91,35 +100,47 @@ collections:
         valueField: "slug"
         displayFields: ["lastName"]
         multiple: true
+        required: true
+
       - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false
 
-  - name: experts
-    label: Experts
-    label_singular: 'Expert'
-    folder: content/experts
+  - name: "experts"
+    label: "Experts"
+    label_singular: "Expert"
+    folder: "content/experts"
     slug: "{{fields.slug}}"
-    path: '{{slug}}/_index'
+    path: "{{slug}}/_index"
     media_folder: "../../../static/images/experts"
     public_folder: "/images/experts"
     create: true
     fields:
-      - label: Last Name
-        name: lastName
-        widget: string
-      - label: First Name
-        name: firstName
-        widget: string
-      - label: Slug
-        name: slug
-        widget: string
-      - label: Description
-        name: description
-        widget: string
-      - label: Image
-        name: image
-        widget: image
+      - label: "Last Name"
+        name: "lastName"
+        widget: "string"
+        required: false
+
+      - label: "First Name"
+        name: "firstName"
+        widget: "string"
+        required: false
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: false
+
+      - label: "Description"
+        name: "description"
+        widget: "string"
+        required: false
+
+      - label: "Image"
+        name: "image"
+        widget: "image"
+        required: false
 
   - name: sources
     label: Sources
