@@ -39,16 +39,22 @@
     </div>
   {{ end }}
 
-  {{ range .Params.comments }}
-    {{ range where $.Site.Pages "Params.id" .comment }}
-      {{ . }}
-    {{ end }}
-  {{ end }}
-
   <div class="card-footer border-0 small">
-    {{ if .Params.experts }}
-      {{ range $index, $element := .Params.experts }}
-        <span class="badge badge-secondary text-decoration-none font-weight-light">{{ . }}</span>
+    {{ if .Params.comments }}
+      {{ range $index, $element := .Params.comments }}
+        {{ with $.Site.GetPage .  }}
+          {{ if .Params.experts }}
+            {{ range $index, $element := .Params.experts }}
+              {{ with $.Site.GetPage "/experts" }}
+                {{ with .GetPage $element }}
+                  <span class="badge badge-secondary text-decoration-none font-weight-light">
+                    {{ .Param "firstName" }} {{ .Param "lastName" }}
+                  </span>
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
   </div>

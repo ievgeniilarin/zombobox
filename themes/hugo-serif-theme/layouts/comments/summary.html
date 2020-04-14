@@ -1,9 +1,6 @@
 
 <div class="card border-0 mb-3 shadow">
   <div class="card-header border-0 small text-uppercase">
-    {{ range .Params.categories }}
-      <span>{{ . }}</span>
-    {{ end }}
     <span class="small text-black-50 float-right">{{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}</span>
     {{ if .Params.message }}
       <span class="badge badge-warning float-right mr-1 text-uppercase">{{ .Params.message }}</span>
@@ -29,7 +26,15 @@
   <div class="card-footer border-0 small bg-light">
     {{ if .Params.experts }}
       {{ range $index, $element := .Params.experts }}
-        <span class="badge badge-secondary text-decoration-none font-weight-light">{{ . }}</span>
+        <a href="{{ "/experts/" | relLangURL }}{{ . | urlize }}">
+        {{ with $.Site.GetPage "/experts" }}
+          {{ with .GetPage $element }}
+            <span class="badge badge-secondary text-decoration-none font-weight-light">
+              {{ .Param "firstName" }} {{ .Param "lastName" }}
+            </span>
+          {{ end }}
+        {{ end }}
+        </a>
       {{ end }}
     {{ end }}
   </div>

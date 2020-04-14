@@ -21,7 +21,7 @@
         </p>
       </div>
       {{ range .Params.comments }}
-        {{ range where $.Site.Pages "Params.id" .comment }}
+        {{ range where $.Site.Pages "Params.id" . }}
           {{ .Render "summary" }}
         {{ end }}
       {{ end }}

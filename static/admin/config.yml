@@ -71,7 +71,7 @@ collections:
     label_singular: 'Expert'
     folder: content/experts
     slug: "{{fields.slug}}"
-    path: '{{slug}}/index'
+    path: '{{slug}}/_index'
     media_folder: "../../../static/images/experts"
     public_folder: "/images/experts"
     create: true
