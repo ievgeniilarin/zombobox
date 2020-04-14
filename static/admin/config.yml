@@ -8,40 +8,40 @@ publish_mode: editorial_workflow
 
 collections:
 
-- name: "experts"
-  label: "Эксперты"
-  label_singular: "Эксперт"
-  folder: "content/experts"
-  slug: "{{fields.slug}}"
-  path: "{{slug}}/_index"
-  media_folder: "../../../static/images/experts"
-  public_folder: "/images/experts"
-  create: true
-  fields:
-    - label: "Фамилия"
-      name: "lastName"
-      widget: "string"
-      required: true
+  - name: "experts"
+    label: "Эксперты"
+    label_singular: "Эксперт"
+    folder: "content/experts"
+    slug: "{{fields.slug}}"
+    path: "{{slug}}/_index"
+    media_folder: "../../../static/images/experts"
+    public_folder: "/images/experts"
+    create: true
+    fields:
+      - label: "Фамилия"
+        name: "lastName"
+        widget: "string"
+        required: true
 
-    - label: "Имя"
-      name: "firstName"
-      widget: "string"
-      required: true
+      - label: "Имя"
+        name: "firstName"
+        widget: "string"
+        required: true
 
-    - label: "Slug"
-      name: "slug"
-      widget: "string"
-      required: true
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true
 
-    - label: "Описание"
-      name: "description"
-      widget: "string"
-      required: true
+      - label: "Описание"
+        name: "description"
+        widget: "string"
+        required: true
 
-    - label: "Иллюстрация"
-      name: "image"
-      widget: "image"
-      required: true
+      - label: "Иллюстрация"
+        name: "image"
+        widget: "image"
+        required: true
 
   - name: "comments"
     label: "Комментарии"
