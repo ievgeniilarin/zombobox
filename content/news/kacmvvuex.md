@@ -8,7 +8,7 @@ date: 2020-04-01T14:17:40.744Z
 comments:
   - hpYoKEveb
   - KG3lM_0a1
-image: /images/news/kacmvvuex.jpg
+image: ""
 categories: hot-news
 lead: Президент Володимир Зеленський звільнив Олексія Перевезенцева від
   виконання обов'язків свого представника в Кабінеті міністрів і поклав ці
