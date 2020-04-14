@@ -58,6 +58,18 @@ collections:
       - label: "YouTube"
         name: "youtube"
         widget: "string"
+      - label: "Experts"
+        name: "experts"
+        collapsed: false
+        widget: "list"
+        fields:
+          - label: "Expert"
+            name: "expert"
+            widget: "relation"
+            collection: "experts"
+            searchFields: ["lastName"]
+            valueField: "slug"
+            displayFields: ["lastName"]
       - label: "Body"
         name: "body"
         widget: "markdown"
