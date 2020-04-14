@@ -60,16 +60,12 @@ collections:
         widget: "string"
       - label: "Experts"
         name: "experts"
-        collapsed: false
-        widget: "list"
-        fields:
-          - label: "Expert"
-            name: "expert"
-            widget: "relation"
-            collection: "experts"
-            searchFields: ["lastName"]
-            valueField: "slug"
-            displayFields: ["lastName"]
+        widget: "relation"
+        collection: "experts"
+        searchFields: ["lastName"]
+        valueField: "slug"
+        displayFields: ["lastName"]
+        multiple: true
       - label: "Body"
         name: "body"
         widget: "markdown"
