@@ -1,16 +1,12 @@
 
 <div class="card border-0 shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
-  {{ if .Params.categories }}
-    <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
+  <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
+    {{ if .Params.categories }}
       {{ range .Params.categories }}
-        <span>{{ . }}</span>
+      
       {{ end }}
-      <span class="small text-black-50 float-right">{{ .Date.Format "01.02" }}</span>
-      {{ if .Params.message }}
-        <span class="badge badge-warning float-right mr-1 text-uppercase">{{ .Params.message }}</span>
-      {{ end }}
-    </div>
-  {{ end }}
+    {{ end }}
+  </div>
   <div class="card-body">
     <h3 class="card-title font-weight-bold">
       {{ .Title }}
