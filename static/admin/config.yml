@@ -66,17 +66,13 @@ collections:
     label: Experts
     label_singular: 'Expert'
     folder: content/experts
-    path: '{{fields.slug}}/index'
-    media_folder: 'static/images/experts'
-    public_folder: '/images/experts'
+    slug: "{{fields.slug}}"
+    path: '{{slug}}/index'
     create: true
     fields:
       - label: Name
         name: name
         widget: string
-      - label: 'Image'
-        name: 'image'
-        widget: 'image'
       - label: Slug
         name: slug
         widget: string
