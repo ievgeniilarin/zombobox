@@ -61,58 +61,21 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-      - label: Experts
-        name: experts
 
-        # Default widget name
-        widget: ncw-file-relation
-
-        # Collection name
-        collection: setting
-
-        # The name of the file in that collection
-        file: experts
-
-        # The field that is a list
-        target_field: experts
-
-        # The field that will be used to store data
-        # Only applicable to list with multi fields
-        id_field: slug
-
-        # The field that will be used to show as options
-        # Only applicable to list with multi fields
-        display_fields: name
-
-        # Allow multiple selection
-        multiple: true
-
-  - label: Setting
-    name: setting  # <---- 'collection'
-    media_folder: ../static/images/experts
-    public_folder: images/experts
-    files:
-      - label: Experts
-        name: experts  # <---- 'file'
-        file: data/experts.json
-        fields:
-          - label: Experts
-            name: experts # <---- 'target_field'
-            widget: list
-            allow_add: true
-            fields:
-              - label: Name
-                name: name # <--- 'display_fields'
-                widget: string
-
-              - label: Description
-                name: description
-                widget: string
-
-              - label: Slug
-                name: slug # <---- 'id_field'
-                widget: string
-
-              - label: Image
-                name: image
-                widget: image
+  - name: experts
+    label: Experts
+    label_singular: 'Expert'
+    folder: content/experts
+    path: '{{fields.slug}}/index'
+    media_folder: 'static/images/experts'
+    public_folder: '/images/experts'
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: 'Image'
+        name: 'image'
+        widget: 'image'
+      - label: Slug
+        name: slug
+        widget: string
