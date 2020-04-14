@@ -44,16 +44,15 @@
     </div>
   {{ end }}
 
-
   <div class="card-footer border-0 text-uppercase">
     {{ if .Params.comments }}
-      {{ range $index, $element := .Params.comments }}
-        {{ with $.Site.GetPage .  }}
-          {{ if .Params.experts }}
-            {{ range $index, $element := .Params.experts }}
-              {{ with $.Site.GetPage "/experts" }}
-                {{ with .GetPage $element }}
-                  <span class="badge badge-secondary text-decoration-none font-weight-light">
+      <div class="card-group flex-row">
+        {{ range .Params.comments }}
+          {{ range where $.Site.Pages "Params.id" . }}
+            {{ if .Params.experts }}
+              {{ range .Params.experts }}
+                {{ range where $.Site.Pages "Params.slug" . }}
+                  <span class="badge badge-secondary font-weight-light mr-1">
                     {{ .Param "firstName" }} {{ .Param "lastName" }}
                   </span>
                 {{ end }}
@@ -61,7 +60,7 @@
             {{ end }}
           {{ end }}
         {{ end }}
-      {{ end }}
+      </div>
     {{ end }}
   </div>
 </div>
