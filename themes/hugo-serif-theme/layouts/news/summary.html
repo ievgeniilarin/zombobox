@@ -2,8 +2,11 @@
 <div class="card border-0 shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
   <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
     {{ with .Params.categories }}
-
+      {{ range where $.Site.Pages "Params.slug" . }}
+        {{ .Param "name" }}
+      {{ end }}
     {{ end }}
+    <span class="text-black-50 float-right">{{ .Date.Format "01.02" }}</span>
   </div>
   <div class="card-body">
     <h3 class="card-title font-weight-bold">

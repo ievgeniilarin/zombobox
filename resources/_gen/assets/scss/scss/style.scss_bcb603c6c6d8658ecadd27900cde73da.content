@@ -5891,13 +5891,8 @@ ol {
     padding-left: 20px; }
 
 .page-comments-single .content > p {
-  color: black; }
-  .page-comments-single .content > p:first-of-type {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 40px;
-    font-weight: regular;
-    color: #686868; }
+  color: black;
+  font-size: 0.9rem; }
 
 body {
   font-size: 16px;

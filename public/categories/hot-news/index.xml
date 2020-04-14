@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Services on Hugo Serif Theme</title>
-    <link>http://zombobox.com.ua/news/</link>
-    <description>Recent content in Services on Hugo Serif Theme</description>
+    <title>Hugo Serif Theme</title>
+    <link>http://zombobox.com.ua/categories/hot-news/</link>
+    <description>Recent content on Hugo Serif Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 Apr 2020 14:28:51 +0000</lastBuildDate>
     
-	<atom:link href="http://zombobox.com.ua/news/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://zombobox.com.ua/categories/hot-news/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

@@ -1,39 +1,51 @@
 backend:
   name: git-gateway
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master
 
-# These lines should *not* be indented
-media_folder: "static" # Media files will be stored in the repo under static/images/uploads
-public_folder: "/images" # The src attribute for uploaded media will begin with /images/uploads
+media_folder: "static"
+public_folder: "/images"
 publish_mode: editorial_workflow
 
 collections:
-  - name: "news" # Used in routes, e.g., /admin/collections/blog
-    label: "News" # Used in the UI
-    folder: "content/news" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{fields.id}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "news"
+    label: "Новости"
+    label_singular: Новость
+    folder: "content/news"
+    create: true
+    slug: "{{fields.id}}"
+    media_folder: "../../static/images/news"
+    public_folder: "/images/news"
+    fields:
       - label: "ID"
         name: "id"
         widget: "ncw-id"
-      - label: "Title"
+        required: true
+
+      - label: "Заголовок"
         name: "title"
         widget: "string"
-      - label: "Sources"
+        required: true
+
+      - label: "Источник"
         name: "sources"
         widget: "relation"
         collection: "sources"
         searchFields: ["name"]
         valueField: "slug"
         displayFields: ["name"]
-      - label: "Link"
+        required: true
+
+      - label: "Ссылка"
         name: "link"
         widget: "string"
-      - label: "Publish Date"
+        required: true
+
+      - label: "Дата публикации"
         name: "date"
         widget: "datetime"
-      - label: "Comments"
+        required: true
+
+      - label: "Комментарии"
         name: "comments"
         widget: "relation"
         collection: "comments"
@@ -41,30 +53,55 @@ collections:
         valueField: "id"
         displayFields: ["title"]
         multiple: true
-      - label: "Body"
+        required: false
+
+      - label: "Иллюстрация"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Категории"
+        name: "categories"
+        widget: "relation"
+        collection: "categories"
+        searchFields: ["name"]
+        valueField: "slug"
+        displayFields: ["name"]
+        required: true
+
+      - label: "Текст"
         name: "body"
         widget: "markdown"
+        required: false
 
-  - name: "comments" # Used in routes, e.g., /admin/collections/blog
-    label: "Comments" # Used in the UI
-    label_singular: Comment
-    folder: "content/comments" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{fields.id}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
+  - name: "comments"
+    label: "Комментарии"
+    label_singular: "Комментарий"
+    folder: "content/comments"
+    create: true
+    slug: "{{fields.id}}"
+    fields:
       - label: "ID"
         name: "id"
         widget: "ncw-id"
-      - label: "Title"
+        required: true
+
+      - label: "Заголовок"
         name: "title"
         widget: "string"
-      - label: "Publish Date"
+        required: true
+
+      - label: "Дата публикции"
         name: "date"
         widget: "datetime"
+        required: true
+
       - label: "YouTube"
         name: "youtube"
         widget: "string"
-      - label: "Experts"
+        required: true
+
+      - label: "Эксперты"
         name: "experts"
         widget: "relation"
         collection: "experts"
@@ -72,47 +109,80 @@ collections:
         valueField: "slug"
         displayFields: ["lastName"]
         multiple: true
-      - label: "Body"
+        required: true
+
+      - label: "Текст"
         name: "body"
         widget: "markdown"
+        required: false
 
-  - name: experts
-    label: Experts
-    label_singular: 'Expert'
-    folder: content/experts
+  - name: "experts"
+    label: "Эксперты"
+    label_singular: "Эксперт"
+    folder: "content/experts"
     slug: "{{fields.slug}}"
-    path: '{{slug}}/_index'
+    path: "{{slug}}/_index"
     media_folder: "../../../static/images/experts"
     public_folder: "/images/experts"
     create: true
     fields:
-      - label: Last Name
-        name: lastName
-        widget: string
-      - label: First Name
-        name: firstName
-        widget: string
-      - label: Slug
-        name: slug
-        widget: string
-      - label: Description
-        name: description
-        widget: string
-      - label: Image
-        name: image
-        widget: image
+      - label: "Фамилия"
+        name: "lastName"
+        widget: "string"
+        required: false
 
-  - name: sources
-    label: Sources
-    label_singular: 'source'
-    folder: content/sources
+      - label: "Имя"
+        name: "firstName"
+        widget: "string"
+        required: false
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: false
+
+      - label: "Описание"
+        name: "description"
+        widget: "string"
+        required: false
+
+      - label: "Иллюстрация"
+        name: "image"
+        widget: "image"
+        required: false
+
+  - name: "sources"
+    label: "Источники"
+    label_singular: "Источник"
+    folder: "content/sources"
     slug: "{{fields.slug}}"
-    path: '{{slug}}/_index'
+    path: "{{slug}}/_index"
     create: true
     fields:
-      - label: Name
-        name: name
-        widget: string
-      - label: Slug
-        name: slug
-        widget: string
+      - label: "Название"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true
+
+  - name: "categories"
+    label: "Категории"
+    label_singular: "Категория"
+    folder: "content/categories"
+    slug: "{{fields.slug}}"
+    path: "{{slug}}/_index"
+    create: true
+    fields:
+      - label: "Название"
+        name: "name"
+        widget: "string"
+        required: true
+
+      - label: "Slug"
+        name: "slug"
+        widget: "string"
+        required: true

@@ -2,13 +2,7 @@
   .content {
     > p {
       color: rgb(0, 0, 0);
-      &:first-of-type {
-        font-size: 1.4rem;
-        line-height: 1.4;
-        margin-bottom: 40px;
-        font-weight: regular;
-        color: rgb(104, 104, 104);
-      }
+      font-size: 0.9rem;
     }
   }
 }

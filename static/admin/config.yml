@@ -69,6 +69,11 @@ collections:
         displayFields: ["name"]
         required: true
 
+      - label: "Лид"
+        name: "lead"
+        widget: "markdown"
+        required: true
+
       - label: "Текст"
         name: "body"
         widget: "markdown"
