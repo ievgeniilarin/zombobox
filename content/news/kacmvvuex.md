@@ -4,6 +4,9 @@ color: bg-success
 id: KacmvVueX
 title: Заголовок из нескольких слов и одно экспертное мнение без иллюстрации новости
 date: 2020-04-13T14:17:40.744Z
+comments:
+  - hpYoKEveb
+  - KG3lM_0a1
 images:
   - images/headshot-male.jpg
 categories:
