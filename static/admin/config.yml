@@ -64,7 +64,6 @@ collections:
         widget: "list"
         fields:
           - label: "Expert"
-            name: "expert"
             widget: "relation"
             collection: "experts"
             searchFields: ["lastName"]
