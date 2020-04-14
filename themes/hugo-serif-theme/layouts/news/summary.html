@@ -29,25 +29,13 @@
     {{ $len := len .Params.comments }}
     <div class="card-group flex-row">
       {{ range $index, $element := .Params.comments }}
-        {{ . }}<br>
-        {{ with $.Site.GetPage .  }}
-        {{ . }}<br>
-          {{ if .Params.experts }}
-            {{ range $index, $element := .Params.experts }}
-              {{ . }}<br>
-              {{ with $.Site.GetPage "/experts" }}
-                {{ with .GetPage $element }}
-                  <div class="card rounded-0 m-0 border-bottom-0 border-left-0 {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
-                    <img class="card-img-top rounded-0 d-block" src="{{ (.Param "image") | relURL }}" alt="Card image cap">
-                  </div>
-                {{ end }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
+        {{ range where $.Site.Pages "Params.id" . }}
+         {{ . }}
         {{ end }}
       {{ end }}
     </div>
   {{ end }}
+
 
   <div class="card-footer border-0 text-uppercase">
     {{ if .Params.comments }}
