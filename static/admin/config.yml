@@ -25,16 +25,12 @@ collections:
         widget: "datetime"
       - label: "Comments"
         name: "comments"
-        collapsed: false
-        widget: "list"
-        fields:
-          - label: "Comment"
-            name: "comment"
-            widget: "relation"
-            collection: "comments"
-            searchFields: ["title"]
-            valueField: "id"
-            displayFields: ["title"]
+        widget: "relation"
+        collection: "comments"
+        searchFields: ["title"]
+        valueField: "id"
+        displayFields: ["title"]
+        multiple: true
       - label: "Body"
         name: "body"
         widget: "markdown"
