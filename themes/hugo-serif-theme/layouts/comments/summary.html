@@ -6,7 +6,7 @@
         <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ . | urlize }}">
           {{ range where $.Site.Pages "Params.slug" . }}
             <span class="badge badge-secondary font-weight-light mr-1">
-              {{ .Param "firstName" }} {{ .Param "lastName" }}
+              {{ .Param "firstName" }} {{ .Param "lastName" }}, {{ .Param "description" }}
             </span>
           {{ end }}
         </a>
