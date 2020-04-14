@@ -139,27 +139,27 @@ collections:
       - label: "Фамилия"
         name: "lastName"
         widget: "string"
-        required: false
+        required: true
 
       - label: "Имя"
         name: "firstName"
         widget: "string"
-        required: false
+        required: true
 
       - label: "Slug"
         name: "slug"
         widget: "string"
-        required: false
+        required: true
 
       - label: "Описание"
         name: "description"
         widget: "string"
-        required: false
+        required: true
 
       - label: "Иллюстрация"
         name: "image"
         widget: "image"
-        required: false
+        required: true
 
   - name: "sources"
     label: "Источники"
