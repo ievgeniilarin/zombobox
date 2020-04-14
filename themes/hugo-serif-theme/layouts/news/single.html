@@ -8,10 +8,7 @@
     <div class="col-12">
       <div class="comments comments-single">
         <h1 class="display-5 font-weight-light mb-1">{{.Title}}</h1>
-        <div class="content small">
-          {{ .Content }}
-        </div>
-        <p class="small mb-4">
+        <p class="small mb-2">
           {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}
           {{ if .Params.experts }}
             {{ range $index, $element := .Params.experts }}
@@ -19,6 +16,9 @@
             {{ end }}
           {{ end }}
         </p>
+        <div class="content small mb-4">
+          {{ .Content }}
+        </div>
       </div>
       {{ range .Params.comments }}
         {{ range where $.Site.Pages "Params.id" . }}
