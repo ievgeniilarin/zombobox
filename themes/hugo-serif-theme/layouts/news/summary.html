@@ -28,9 +28,13 @@
   {{ if .Params.comments }}
     {{ $len := len .Params.comments }}
     <div class="card-group flex-row">
-      {{ range $index, $element := .Params.comments }}
+      {{ range .Params.comments }}
         {{ range where $.Site.Pages "Params.id" . }}
-         {{ . }}
+          {{ if .Params.experts }}
+            {{ range .Params.experts }}
+              {{ . }}
+            {{ end }}
+          {{ end }}
         {{ end }}
       {{ end }}
     </div>
