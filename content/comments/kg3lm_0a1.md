@@ -6,6 +6,8 @@ id: KG3lM_0a1
 youtube: R8Ak69FQKbg
 categories:
   - Комментарий
+experts:
+  - grekov-nikolai
 ---
 
 Чтобы закончить войну нужно перейти к диалогу. Все заинтересованные стороны в
