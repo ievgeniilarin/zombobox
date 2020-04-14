@@ -69,6 +69,7 @@ collections:
     path: '{{fields.slug}}/index'
     media_folder: 'static/images/experts'
     public_folder: '/images/experts'
+    create: true
     fields:
       - label: Name
         name: name
