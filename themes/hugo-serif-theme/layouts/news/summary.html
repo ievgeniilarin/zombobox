@@ -1,6 +1,6 @@
 
-<div class="card border-0 shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
-  <div class="card-header border-0 small text-uppercase">
+<div class="card border border-white shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
+  <div class="card-header border-0 small text-uppercase text-info">
     {{ with .Params.categories }}
       {{ range where $.Site.Pages "Params.slug" . }}
         {{ .Param "name" }}

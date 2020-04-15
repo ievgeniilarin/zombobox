@@ -5850,8 +5850,8 @@ ol {
   text-align: center; }
   .feature .feature-image {
     flex: 0 0 auto;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     display: flex;
     margin-bottom: 20px;
     text-align: center; }

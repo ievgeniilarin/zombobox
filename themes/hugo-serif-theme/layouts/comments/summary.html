@@ -1,5 +1,5 @@
 
-<div class="card border-0 mb-3 shadow">
+<div class="card border border-white mb-3 shadow">
   <div class="card-header border-0">
     {{ if .Params.experts }}
       {{ range .Params.experts }}
@@ -7,7 +7,7 @@
           {{ $slug := . | urlize }}
           {{ range where $.Site.Pages "Params.slug" . }}
             <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ $slug | urlize }}">
-              <span class="font-weight-bold text-uppercase">
+              <span class="font-weight-bold text-uppercase text-info">
                 {{ .Param "firstName" }} {{ .Param "lastName" }}
               </span>
             </a>
