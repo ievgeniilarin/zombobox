@@ -1,6 +1,6 @@
 
 <div class="card border-0 shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
-  <div class="card-header border-0 small text-uppercase {{ .Params.color }}">
+  <div class="card-header border-0 small text-uppercase">
     {{ with .Params.categories }}
       {{ range where $.Site.Pages "Params.slug" . }}
         {{ .Param "name" }}
@@ -11,8 +11,8 @@
   <div class="card-body">
     <h3 class="card-title font-weight-bold">
       {{ .Title }}
-      <small class="text-muted font-weight-lighter">{{ .Params.lead | plainify | htmlUnescape }}</small>
     </h3>
+    <small class="text-muted font-weight-lighter small">{{ .Params.lead | plainify | htmlUnescape }}</small>
     <!-- <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p> -->
   </div>
 
@@ -41,23 +41,21 @@
     </div>
   {{ end }}
 
-  <div class="card-footer border-0 text-uppercase">
+  <div class="card-footer border-0 text-uppercase small">
     {{ if .Params.comments }}
-      <div class="card-group flex-row">
         {{ range .Params.comments }}
           {{ range where $.Site.Pages "Params.id" . }}
             {{ if .Params.experts }}
               {{ range .Params.experts }}
                 {{ range where $.Site.Pages "Params.slug" . }}
-                  <span class="badge badge-secondary font-weight-light" style="margin: 5px;">
+                <div class="d-inline-block mr-1 small">
                     {{ .Param "firstName" }} {{ .Param "lastName" }}
-                  </span>
+                </div>
                 {{ end }}
               {{ end }}
             {{ end }}
           {{ end }}
         {{ end }}
-      </div>
     {{ end }}
   </div>
 </div>

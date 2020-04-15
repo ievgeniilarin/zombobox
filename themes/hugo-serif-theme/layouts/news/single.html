@@ -7,26 +7,37 @@
   <div class="row justify-content-start">
     <div class="col-12">
       <div class="comments comments-single">
-        <h1 class="display-5 font-weight-light mb-1">{{ .Title }}</h1>
-        <p class="small mb-2">
-          {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }},
-
-          {{ with .Params.sources }}
-            {{ range where $.Site.Pages "Params.slug" . }}
-              <a href="{{ $.Params.link }}" class="text-muted">{{ .Param "name" }}</a>
-            {{ end }}
-          {{ end }}
-        </p>
-        <div class="content mb-4">
-          <p>{{ .Params.lead }}</p>
-          {{ .Content }}
+        <div class="card border-0 mb-3 shadow">
+          <div class="card-header border-0">
+            <div class="small d-inline-block" style="width: 75%;">
+              {{ with .Params.sources }}
+                {{ range (where $.Site.Pages "Params.slug" .) }}
+                  <a href="{{ $.Params.link }}" class="text-muted text-decoration-none">{{ .Param "name" }}</a>
+                {{ end }}
+              {{ end }}
+            </div>
+            <div class="small text-black-50 float-right d-inline-block">
+              <span>
+                {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}
+              </span>
+            </div>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title">{{ .Title }}</h1>
+            <p class="card-text">{{ .Params.lead }}</p>
+            {{ .Content }}
+          </div>
         </div>
       </div>
+      <div class="row">
       {{ range .Params.comments }}
-        {{ range where $.Site.Pages "Params.id" . }}
-          {{ .Render "summary" }}
+        {{ range (where $.Site.Pages "Params.id" .) }}
+          <div class="col-12 col-md-6 d-flex align-items-stretch">
+            {{ .Render "summary" }}
+          </div>
         {{ end }}
       {{ end }}
+      </div>
     </div>
   </div>
 </div>

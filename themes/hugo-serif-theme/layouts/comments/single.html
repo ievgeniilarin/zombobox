@@ -7,19 +7,30 @@
   <div class="row justify-content-start">
     <div class="col-12">
       <div class="card border-0 mb-3 shadow">
-        <div class="card-header border-0 text-uppercase">
+        <div class="card-header border-0">
           {{ if .Params.experts }}
             {{ range .Params.experts }}
-              <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ . | urlize }}">
+              <div class="small d-inline-block" style="width: 75%;">
+                {{ $slug := . | urlize }}
                 {{ range where $.Site.Pages "Params.slug" . }}
-                  <span class="badge badge-secondary font-weight-light mr-1">
-                    {{ .Param "firstName" }} {{ .Param "lastName" }}, {{ .Param "description" }}
+                  <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ $slug | urlize }}">
+                    <span class="font-weight-bold text-uppercase">
+                      {{ .Param "firstName" }} {{ .Param "lastName" }}
+                    </span>
+                  </a>
+                  <br>
+                  <span class="small">
+                    {{ .Param "description" }}
                   </span>
                 {{ end }}
-              </a>
+              </div>
             {{ end }}
           {{ end }}
-          <span class="small text-black-50 float-right">{{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}</span>
+          <div class="small text-black-50 float-right d-inline-block">
+            <span>
+              {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}
+            </span>
+          </div>
         </div>
         <div class="card-body">
           <h1 class="card-title font-weight-bold">

@@ -1,34 +1,40 @@
 
 <div class="card border-0 mb-3 shadow">
-  <div class="card-header border-0 text-uppercase">
+  <div class="card-header border-0">
     {{ if .Params.experts }}
       {{ range .Params.experts }}
-        <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ . | urlize }}">
+        <div class="small d-inline-block" style="width: 75%;">
+          {{ $slug := . | urlize }}
           {{ range where $.Site.Pages "Params.slug" . }}
-            <span class="badge badge-secondary font-weight-light mr-1">
-              {{ .Param "firstName" }} {{ .Param "lastName" }}, {{ .Param "description" }}
+            <a class="text-decoration-none" href="{{ "/experts/" | relLangURL }}{{ $slug | urlize }}">
+              <span class="font-weight-bold text-uppercase">
+                {{ .Param "firstName" }} {{ .Param "lastName" }}
+              </span>
+            </a>
+            <br>
+            <span class="small">
+              {{ .Param "description" }}
             </span>
           {{ end }}
-        </a>
+        </div>
       {{ end }}
     {{ end }}
-    <span class="small text-black-50 float-right">{{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}</span>
+    <div class="small text-black-50 float-right d-inline-block">
+      <span>
+        {{ .Date.Format "01.02" }}, {{ .Date.Format "15:04" }}
+      </span>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-lg-5">
-      <div class="embed-responsive embed-responsive-16by9 m-0 m-lg-2">
-        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ .Params.youtube }}?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-    </div>
-    <div class="col-lg-7">
-      <div class="card-body">
-        <h3 class="card-title font-weight-bold">
-          <a href="{{ .Permalink }}" class="text-decoration-none" style="color: black;">
-            {{ .Title }}
-          </a>
-        </h3>
-        <p class="text-muted">{{ .Params.lead | plainify | htmlUnescape }}</p>
-      </div>
-    </div>
+  <div class="card-body">
+    <h3 class="card-title font-weight-bold">
+      {{ .Title }}
+    </h3>
+    <p class="text-muted small font-weight-light" style="line-height: 1.3rem;">{{ .Params.lead | plainify | htmlUnescape }}</p>
+  </div>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ .Params.youtube }}?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="card-footer border-0 text-uppercase">
+    <a href="{{ .Permalink }}" class="btn btn-outline-secondary btn-sm text-decoration-none text-lowercase" role="button">Читать</a>
   </div>
 </div>
