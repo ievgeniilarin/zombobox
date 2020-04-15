@@ -3,7 +3,7 @@ id: 6Za7deeNv
 title: Бачо Корчилава. Какие ценности становятся приоритетными в период
   нестабильности?
 date: 2020-04-14T18:42:31.840Z
-youtube: DmtyDSIhAKE&t=369s
+youtube: DmtyDSIhAKE
 experts:
   - korchilava-bacho
 lead: Почему нестабильность порождает авторитеты, как на это реагирует общество
