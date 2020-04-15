@@ -3,7 +3,7 @@
 {{ define "header_classes" }}{{ end }}
 
 {{ define "main" }}
-<div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+<div class="container pb-6 pt-6 pt-md-4 pb-md-4">
   <div class="row justify-content-start">
     <div class="col-12">
       <div class="comments comments-single">
@@ -25,14 +25,16 @@
           <div class="card-body">
             <h1 class="card-title">{{ .Title }}</h1>
             <p class="card-text">{{ .Params.lead }}</p>
-            {{ .Content }}
+            <div class="content">
+              {{ .Content }}
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
       {{ range .Params.comments }}
         {{ range (where $.Site.Pages "Params.id" .) }}
-          <div class="col-12 col-md-6 d-flex align-items-stretch">
+          <div class="col-12 col-lg-6 d-flex align-items-stretch">
             {{ .Render "summary" }}
           </div>
         {{ end }}
