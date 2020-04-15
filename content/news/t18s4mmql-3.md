@@ -3,7 +3,7 @@ id: t18S4mmQl
 title: Генерал СБУ задержан за подготовку убийства Адама Осмаева
 sources: lb-ua
 link: https://lb.ua/news/2020/04/14/455308_general_sbu_zaderzhan_podgotovku.html
-date: 2020-04-15T14:28:59.434Z
+date: 2020-01-09T15:28:59.434Z
 comments:
   - dtA-FTgqs
   - 6Za7deeNv
