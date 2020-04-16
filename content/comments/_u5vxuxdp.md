@@ -2,7 +2,7 @@
 id: _U5vXUxdP
 title: "Финансовый мир очнулся: выбранный нами инновационный путь продолжает удивлять"
 date: 2020-04-16T19:23:04.316Z
-youtube: OLfHpvJKNg0
+youtube: EJ2i2VHunqA
 experts:
   - copeland-gloria
 lead: Тщательные исследования конкурентов неоднозначны и&nbsp;будут
