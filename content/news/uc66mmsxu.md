@@ -6,6 +6,7 @@ link: https://lb.ua/news/2020/04/16/455478_rada_vvela_osobuyu_protseduru_prinyat
 date: 2020-04-16T17:44:30.346Z
 comments:
   - UZ2Csi7WR
+  - oe1_TMqy1
 categories: politics
 lead: |
   Депутаты разблокировали выполнение ключевого условия для кредита МВФ
