@@ -1,5 +1,5 @@
 
-<div class="card border border-white shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
+<div class="card border shadow" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
   <div class="card-header border-0 small text-uppercase text-info">
     {{ with .Params.categories }}
       {{ range where $.Site.Pages "Params.slug" . }}
@@ -12,7 +12,7 @@
     <h3 class="card-title font-weight-bold">
       {{ .Title }}
     </h3>
-    <small class="text-muted font-weight-lighter small">{{ .Params.lead | plainify | htmlUnescape }}</small>
+    <small class="text-dark small">{{ .Params.lead | plainify | htmlUnescape }}</small>
     <!-- <p class="card-text small">{{ .Summary | plainify | htmlUnescape }}</p> -->
   </div>
 

@@ -5282,7 +5282,7 @@ ol {
     flex: 1 0 0; }
 
 .header {
-  color: #106be0;
+  color: #17a2b8;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -5470,21 +5470,21 @@ ol {
       list-style: none;
       font-size: 1rem; }
       .main-menu > ul > li > a {
-        padding: 10px 14px 10px 14px;
+        padding: 5px 14px 5px 14px;
         display: inline-block;
         font-weight: regular;
         text-decoration: none;
-        color: #106be0; }
+        color: #17a2b8; }
         .main-menu > ul > li > a:hover {
           text-decoration: underline; }
       .main-menu > ul > li.active > a {
-        background: #106be0;
+        background: #17a2b8;
         border-radius: 3px;
         text-decoration: none;
         color: #ffffff; }
         .main-menu > ul > li.active > a:hover {
           text-decoration: none;
-          background: #106be0;
+          background: #17a2b8;
           transition: all 225ms ease-in 0s;
           color: #ffffff; }
 

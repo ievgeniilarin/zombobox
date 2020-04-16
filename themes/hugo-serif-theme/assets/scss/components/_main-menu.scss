@@ -11,24 +11,24 @@
       list-style: none;
       font-size: 1rem;
       > a {
-        padding: 10px 14px 10px 14px;
+        padding: 5px 14px 5px 14px;
         display: inline-block;
         font-weight: regular;
         text-decoration: none;
-        color: $primary;
+        color: $info;
         &:hover {
           text-decoration: underline;
         }
       }
       &.active {
         > a {
-          background: $primary;
+          background: $info;
           border-radius: 3px;
           text-decoration: none;
           color: #ffffff;
           &:hover {
             text-decoration: none;
-            background: $primary;
+            background: $info;
             transition: all 225ms ease-in 0s;
             color: #ffffff;
           }

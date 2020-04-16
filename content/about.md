@@ -1,6 +1,5 @@
 ---
 title: 'About'
-menu: 'main'
 ---
 
 Lorem markdownum aequalis strigis. _Saetigeri iubeas_, vultu huic alvum nondum
