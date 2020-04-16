@@ -1,0 +1,21 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-comments-list{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+<div class="container py-4">
+  <div class="card border mb-3 shadow">
+    <div class="card-header border-0">
+      <div class="text-uppercase font-weight-bold">
+        {{ .Title }}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <ul id="all-tags">
+      {{ range $slug, $taxonomy := .Site.Taxonomies.experts }}
+        <li>{{ $slug }}</li>
+      {{ end }}
+    </ul>
+</div>
+{{ end }}
