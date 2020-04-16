@@ -4,6 +4,8 @@ title: Рада ввела особую процедуру принятия «а
 sources: lb-ua
 link: https://lb.ua/news/2020/04/16/455478_rada_vvela_osobuyu_protseduru_prinyatiya.html
 date: 2020-04-16T17:44:30.346Z
+comments:
+  - UZ2Csi7WR
 categories: politics
 lead: |
   Депутаты разблокировали выполнение ключевого условия для кредита МВФ
