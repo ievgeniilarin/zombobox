@@ -29,7 +29,7 @@
     <h3 class="card-title font-weight-bold">
       {{ .Title }}
     </h3>
-    <p class="text-dark small" style="line-height: 1.3rem;">{{ .Params.lead }}</p>
+    <p class="text-dark small" style="line-height: 1.3rem;">{{ .Params.lead | safeHTML }}</p>
   </div>
   <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/{{ .Params.youtube }}?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
