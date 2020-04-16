@@ -23,8 +23,8 @@
             </div>
           </div>
           <div class="card-body">
-            <h1 class="card-title">{{ .Title }}</h1>
-            <p class="card-text">{{ .Params.lead }}</p>
+            <h1 class="card-title font-weight-bold">{{ .Title }}</h1>
+            <p class="card-text">{{ .Params.lead | safeHTML }}</p>
             <div class="content">
               {{ .Content }}
             </div>

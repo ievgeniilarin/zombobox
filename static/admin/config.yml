@@ -158,12 +158,12 @@ collections:
         searchFields: ["name"]
         valueField: "slug"
         displayFields: ["name"]
-        required: true
+        required: false
 
       - label: "Ссылка"
         name: "link"
         widget: "string"
-        required: true
+        required: false
 
       - label: "Дата публикации"
         name: "date"
