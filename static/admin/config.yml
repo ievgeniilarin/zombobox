@@ -192,7 +192,7 @@ collections:
         searchFields: ["name"]
         valueField: "slug"
         displayFields: ["name"]
-        required: true
+        required: false
 
       - label: "Лид"
         name: "lead"
