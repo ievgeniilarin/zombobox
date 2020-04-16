@@ -2,7 +2,7 @@
 id: oe1_TMqy1
 title: Новая модель организационной деятельности показала себя во всей красе
 date: 2020-04-16T18:53:36.119Z
-youtube: EJ2i2VHunqA
+youtube: kbJx_HVDI3U
 experts:
   - sims-ada
 lead: Задача организации, в&nbsp;особенности&nbsp;же постоянный количественный

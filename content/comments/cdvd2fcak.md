@@ -2,7 +2,7 @@
 id: cDVD2fcak
 title: Консультация с широким активом процветает, как ни в чем не бывало
 date: 2020-04-16T20:31:52.397Z
-youtube: tdwpb4ZrJ6Y
+youtube: Qxz8sr-6z_w
 experts:
   - francis-evan
 lead: Банальные, но неопровержимые выводы, а&nbsp;акже тщательные исследования

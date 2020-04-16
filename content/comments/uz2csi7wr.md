@@ -2,7 +2,7 @@
 id: UZ2Csi7WR
 title: Тяжёлое машиностроение — это вам не глас грядущего поколения
 date: 2020-04-16T18:38:35.579Z
-youtube: tdwpb4ZrJ6Y
+youtube: MnH7IRwRRo0
 experts:
   - king-alan
 lead: Прежде всего, реализация намеченных плановых заданий не&nbsp;даёт нам

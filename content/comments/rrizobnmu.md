@@ -2,7 +2,7 @@
 id: RrIzobnmu
 title: Независимые СМИ потому и независимы, что жизнь прекрасна
 date: 2020-04-16T20:42:19.118Z
-youtube: tdwpb4ZrJ6Y
+youtube: t6D67JnONko
 experts:
   - perkins-gilbert
 lead: "Каждый из&nbsp;нас понимает очевидную вещь: высококачественный прототип

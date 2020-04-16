@@ -31,7 +31,7 @@
             {{ range .Params.experts }}
               {{ range where $.Site.Pages "Params.slug" . }}
                 <div class="card rounded-0 m-0 border-bottom-0 border-left-0 {{ if eq $index (sub $len 1) }} border-right-0 {{ end }}">
-                  <img class="card-img-top rounded-0 d-block" src="{{ (.Param "image") | relURL }}">
+                  <img class="card-img-top rounded-0" src="{{ (.Param "image") | relURL }}">
                 </div>
               {{ end }}
             {{ end }}
@@ -49,7 +49,7 @@
               {{ range .Params.experts }}
                 {{ range where $.Site.Pages "Params.slug" . }}
                 <div class="d-inline-block mr-1 small">
-                    {{ .Param "firstName" }} {{ .Param "lastName" }}
+                  {{ .Param "firstName" }} {{ .Param "lastName" }}
                 </div>
                 {{ end }}
               {{ end }}

@@ -2,7 +2,7 @@
 id: if_OEpr4T
 title: Политика не может не реагировать на грохот грома градущих изменений
 date: 2020-04-16T20:26:01.586Z
-youtube: EJ2i2VHunqA
+youtube: _b9WQQOe2MQ
 experts:
   - copeland-gloria
 lead: Но реплицированные с&nbsp;зарубежных источников, современные исследования
