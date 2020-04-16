@@ -1,0 +1,4 @@
+---
+name: Политика
+slug: politics
+---
