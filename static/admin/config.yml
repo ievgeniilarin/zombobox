@@ -84,7 +84,7 @@ collections:
         valueField: "slug"
         displayFields: ["lastName"]
         multiple: true
-        required: true
+        required: false
 
       - label: "Лид"
         name: "lead"

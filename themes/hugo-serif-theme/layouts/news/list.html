@@ -12,7 +12,9 @@
   </div>
   <div class="row">
     {{ range .Pages.ByWeight }}
-    <div class="col-12 col-md-6 col-lg-4 mb-2 d-flex align-items-stretch">{{ .Render "summary" }}</div>
+      {{ if ne .Params.comments nil }}
+        <div class="col-12 col-md-6 col-lg-4 mb-2 d-flex align-items-stretch">{{ .Render "summary" }}</div>
+      {{ end }}
     {{ end }}
   </div>
 </div>
