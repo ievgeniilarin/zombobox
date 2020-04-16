@@ -1,0 +1,4 @@
+---
+name: Экономика
+slug: economics
+---
