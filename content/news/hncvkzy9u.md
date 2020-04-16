@@ -4,6 +4,8 @@ title: Суд отправил Татьяну Чорновол под домаш
 sources: finance-ua
 link: https://nv.ua/ukraine/politics/tatyana-chornovol-sud-otpravil-eks-nardepa-pod-domashniy-arest-50082633.html
 date: 2020-04-16T19:03:56.302Z
+comments:
+  - _U5vXUxdP
 categories: politics
 lead: Печерский районный суд Киева отправил бывшего народного депутата
   от&nbsp;Народного&nbsp;фронта Татьяну&nbsp;Чорновол под&nbsp;домашний арест
